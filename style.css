@@ -40,7 +40,7 @@
   --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.04);
   --shadow-card: 0 12px 36px rgba(0, 0, 0, 0.05);
   --shadow-card-hover: 0 20px 45px rgba(0, 0, 0, 0.09);
-  --shadow-modal: 0 30px 80px rgba(0, 0, 0, 0.18);
+  --shadow-modal: 0 30px 90px rgba(0, 0, 0, 0.25);
 }
 
 /* Base Reset & GPU Optimization */
@@ -613,7 +613,7 @@ button {
 }
 
 /* ==========================================================================
-   IN-SITE ROOM GALLERY MODAL & DIRECT REDIRECT SYSTEM
+   PERFECT SPACIOUS LITE ROOM GALLERY MODAL SYSTEM
    ========================================================================== */
 .room-modal-overlay {
   position: fixed;
@@ -622,15 +622,15 @@ button {
   width: 100vw;
   height: 100vh;
   z-index: 2000;
-  background: rgba(11, 13, 18, 0.7);
-  backdrop-filter: blur(12px);
+  background: rgba(11, 13, 18, 0.78);
+  backdrop-filter: blur(14px);
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.35s ease;
-  padding: 24px;
+  padding: 20px;
 }
 
 .room-modal-overlay.active {
@@ -640,16 +640,17 @@ button {
 
 .room-modal-card {
   background: var(--bg-surface);
-  border-radius: var(--radius-lg);
-  width: 100%;
-  max-width: 1140px;
-  max-height: 92vh;
-  overflow-y: auto;
+  border-radius: 20px;
+  width: 94vw;
+  max-width: 1200px;
+  height: 86vh;
+  max-height: 780px;
   box-shadow: var(--shadow-modal);
   border: 1px solid var(--border-gold);
-  transform: scale(0.95) translateY(20px);
+  transform: scale(0.96) translateY(15px);
   transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
+  overflow: hidden;
 }
 
 .room-modal-overlay.active .room-modal-card {
@@ -658,21 +659,21 @@ button {
 
 .modal-close-btn {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 20;
-  background: rgba(255, 255, 255, 0.9);
+  top: 16px;
+  right: 16px;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.95);
   border: 1px solid var(--border-light);
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: var(--text-main);
   transition: var(--transition-fast);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
 }
 
 .modal-close-btn:hover {
@@ -682,24 +683,30 @@ button {
 
 .modal-grid {
   display: grid;
-  grid-template-columns: 1.3fr 1fr;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  width: 100%;
+  height: 100%;
 }
 
-/* Multi-Photo Interactive Gallery */
+/* Multi-Photo Gallery Side */
 .modal-gallery-side {
   position: relative;
   height: 100%;
-  min-height: 520px;
+  min-width: 0;
   background-color: #0B0D12;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .modal-main-photo-wrapper {
   position: relative;
-  flex: 1;
   width: 100%;
-  min-height: 400px;
+  height: calc(100% - 84px);
+  background: #0B0D12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 
@@ -707,6 +714,7 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   transition: opacity 0.3s ease;
 }
 
@@ -714,34 +722,34 @@ button {
   position: absolute;
   top: 16px;
   left: 16px;
-  z-index: 6;
+  z-index: 10;
   background: rgba(11, 13, 18, 0.82);
   color: #FFF;
-  padding: 4px 12px;
+  padding: 5px 14px;
   border-radius: var(--radius-full);
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.05em;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(6px);
 }
 
 .modal-arrow-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 5;
-  background: rgba(255, 255, 255, 0.88);
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.92);
   border: none;
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bold;
   color: var(--text-main);
-  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
   transition: var(--transition-fast);
 }
 
@@ -757,17 +765,21 @@ button {
   display: flex;
   gap: 8px;
   padding: 12px;
-  background: rgba(11, 13, 18, 0.95);
+  height: 84px;
+  min-width: 0;
+  width: 100%;
+  background: #0B0D12;
   overflow-x: auto;
+  border-top: 1px solid rgba(255,255,255,0.08);
 }
 
 .modal-thumb {
-  width: 70px;
-  height: 52px;
+  width: 76px;
+  height: 58px;
   object-fit: cover;
   border-radius: var(--radius-sm);
   cursor: pointer;
-  opacity: 0.55;
+  opacity: 0.5;
   transition: var(--transition-fast);
   border: 2px solid transparent;
   flex-shrink: 0;
@@ -780,15 +792,18 @@ button {
 
 /* Modal Information Side */
 .modal-info-side {
-  padding: 40px;
+  padding: 36px 32px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background: var(--bg-surface);
+  height: 100%;
+  min-width: 0;
+  overflow-y: auto;
 }
 
 .modal-header-badge {
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--primary);
@@ -802,16 +817,16 @@ button {
 }
 
 .modal-room-desc {
-  font-size: 0.98rem;
+  font-size: 0.96rem;
   color: var(--text-body);
   margin-bottom: 24px;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 .modal-specs-pills {
   display: flex;
   gap: 10px;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   flex-wrap: wrap;
 }
 
@@ -938,8 +953,9 @@ button {
 
 /* Responsive Media Queries */
 @media (max-width: 992px) {
-  .modal-grid { grid-template-columns: 1fr; }
-  .modal-gallery-side { height: 360px; min-height: auto; }
+  .modal-grid { grid-template-columns: 1fr; min-height: auto; }
+  .modal-gallery-side { height: 340px; }
+  .modal-main-photo-wrapper { height: 260px; }
   .hero-bg-wrapper {
     position: relative;
     width: 100%;

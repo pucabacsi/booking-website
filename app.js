@@ -1,17 +1,29 @@
 /* ==========================================================================
-   LITE RESIDENCE ORADEA - COMPLETE FULL-GALLERY IN-SITE MODAL & SLIDESHOW
+   LITE RESIDENCE ORADEA - SCANDINAVIAN LUXURY APARTHOTEL ENGINE
    ========================================================================== */
 
-// Helper to generate full gallery image array paths
-function generateGallery(prefix, count) {
+// Helper to generate full gallery image array excluding wellness photos
+function generateGallery(prefix, count, excludeList = []) {
   const images = [];
   for (let i = 1; i <= count; i++) {
-    images.push(`assets/images/${prefix}_img_${i}.jpg`);
+    const filename = `${prefix}_img_${i}.jpg`;
+    if (!excludeList.includes(filename)) {
+      images.push(`assets/images/${filename}`);
+    }
   }
   return images;
 }
 
-// Complete Photo Galleries for All 7 Residences
+// 1. Dedicated Wellness Slideshow Photos
+const WELLNESS_IMAGES = [
+  'assets/images/room_07_img_17.jpg',
+  'assets/images/room_07_img_18.jpg',
+  'assets/images/room_07_img_19.jpg',
+  'assets/images/room_02_img_16.jpg',
+  'assets/images/room_02_img_13.jpg'
+];
+
+// Room Database (Spa photos excluded from individual residence galleries)
 const ROOM_DATA = {
   room_01: {
     id: 'room_01',
@@ -34,7 +46,7 @@ const ROOM_DATA = {
     beds: '1 Double Bed',
     baths: '1 Bathroom',
     feature: 'Heated Floors',
-    gallery: generateGallery('room_02', 17),
+    gallery: generateGallery('room_02', 17, ['room_02_img_13.jpg', 'room_02_img_16.jpg']),
     desc: 'Contemporary 1-bedroom suite equipped with heated floors, climate control air conditioning, private balcony overlooking the calm courtyard, Nespresso machine, and high-speed Wi-Fi.'
   },
   room_03: {
@@ -94,19 +106,10 @@ const ROOM_DATA = {
     beds: '1 King Bed',
     baths: '1 Bathroom',
     feature: 'Skyline Balcony',
-    gallery: generateGallery('room_07', 23),
+    gallery: generateGallery('room_07', 23, ['room_07_img_17.jpg', 'room_07_img_18.jpg', 'room_07_img_19.jpg']),
     desc: 'Flagship top-floor penthouse apartment offering elevated views over Oradea skyline and Dealul Ciuperca. Features spacious lounge, private balcony, full kitchen, and premium linens.'
   }
 };
-
-const WELLNESS_IMAGES = [
-  'assets/images/wellness_1.jpg',
-  'assets/images/wellness_2.jpg',
-  'assets/images/wellness_3.jpg',
-  'assets/images/wellness_4.jpg',
-  'assets/images/wellness_5.jpg',
-  'assets/images/wellness_6.jpg'
-];
 
 let activeRoomId = null;
 let currentGalleryIdx = 0;
@@ -194,7 +197,7 @@ function setWellnessSlide(idx) {
   });
 }
 
-// 4. In-Site Full Multi-Photo Gallery Modal Controller
+// 4. Spacious In-Site Room Gallery Modal Controller
 function openRoomModal(roomId) {
   const room = ROOM_DATA[roomId];
   if (!room) return;
