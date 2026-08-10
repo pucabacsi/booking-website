@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aura Stays | Luxury Vacation Rentals & Direct Booking Hub</title>
-  <meta name="description" content="Discover premium luxury villas, mountain chalets, and penthouses. Book directly for the best guaranteed rate or sync via Airbnb and Booking.com.">
+  <title>Lite Residence Oradea | Serviced Aparthotel Apartments at Dealul Ciuperca</title>
+  <meta name="description" content="Discover Lite Residence Oradea — 7 luxury serviced hotel-style apartments next to Dealul Ciuperca. Shared jacuzzi & sauna, private courtyard parking, private terraces, and keyless self check-in.">
   
-  <!-- CSS Stylesheet -->
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,363 +15,366 @@
   <nav class="navbar" id="navbar">
     <div class="container nav-container">
       <a href="#" class="brand-logo">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-          <polyline points="9 22 9 12 15 12 15 22"></polyline>
-        </svg>
-        AURA<span>STAYS</span>
+        <span class="brand-name">LITE <span>RESIDENCE</span></span>
+        <span class="brand-location">ORADEA • DEALUL CIUPERCA</span>
       </a>
 
       <ul class="nav-links">
-        <li><a href="#hero" class="nav-link active">Home</a></li>
-        <li><a href="#properties" class="nav-link">Accommodations</a></li>
-        <li><a href="#calendar" class="nav-link">Availability</a></li>
-        <li><a href="#features" class="nav-link">Why Direct?</a></li>
-        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#hero" class="nav-link active">Overview</a></li>
+        <li><a href="#wellness" class="nav-link">Wellness & Amenities</a></li>
+        <li><a href="#apartments" class="nav-link">Apartments (01–07)</a></li>
+        <li><a href="#location" class="nav-link">Location</a></li>
       </ul>
 
-      <div style="display: flex; align-items: center; gap: 14px;">
-        <span class="badge badge-live-sync" title="Cyber_UP! iCal Background Sync Active">
-          <span class="pulse-dot"></span> iCal 2-Way Sync
-        </span>
-        <button class="btn-primary" onclick="openBookingModal('General Booking Request')">Book Direct</button>
-      </div>
+      <a href="#apartments" class="btn-gold">Explore Apartments &rarr;</a>
     </div>
   </nav>
 
   <!-- Hero Section -->
   <section class="hero" id="hero">
-    <img src="assets/images/hero_bg.png" alt="Luxury Vacation Villa" class="hero-bg">
+    <img src="assets/images/lite_residence_facade.png" alt="Lite Residence Oradea Building Facade" class="hero-bg">
     <div class="hero-overlay"></div>
 
     <div class="container hero-content">
-      <span class="badge badge-gold">
+      <span class="badge badge-gold reveal-up">
         <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        Exclusive Private Estates
+        Un Nou Concept în Regim Hotelier • Oradea
       </span>
 
-      <h1 class="hero-title">Experience Unmatched <span>Luxury & Comfort</span></h1>
-      <p class="hero-subtitle">Handpicked luxury villas, mountain retreats, and skyline penthouses. Enjoy instant direct reservation rates, or sync seamlessly with Airbnb and Booking.com.</p>
+      <h1 class="hero-title reveal-up">Refined Serviced Living at <span>Dealul Ciuperca</span></h1>
+      <p class="hero-subtitle reveal-up">Discover 7 designer apartments offering an oasis of calm and luxury in Oradea. Featuring a private courtyard wellness spa with Jacuzzi & Sauna, private parking, and keyless check-in.</p>
 
-      <!-- Search Bar -->
-      <form class="search-box" id="search-form">
-        <div class="search-field">
-          <label>
-            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-            Destination
-          </label>
-          <select id="search-destination">
-            <option value="all">All Properties</option>
-            <option value="seaside">Seaside Haven Villa</option>
-            <option value="alpine">Alpine Crest Chalet</option>
-            <option value="penthouse">Skyline Haven Penthouse</option>
-          </select>
+      <div class="hero-highlights reveal-up">
+        <div class="hero-stat">
+          <span class="stat-num">7</span>
+          <span class="stat-label">Luxury Units</span>
         </div>
-
-        <div class="search-field">
-          <label>
-            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-            Check-In
-          </label>
-          <input type="date" id="checkin-date">
+        <div class="hero-stat">
+          <span class="stat-num">Spa</span>
+          <span class="stat-label">Jacuzzi & Sauna</span>
         </div>
-
-        <div class="search-field">
-          <label>
-            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-            Check-Out
-          </label>
-          <input type="date" id="checkout-date">
+        <div class="hero-stat">
+          <span class="stat-num">Private</span>
+          <span class="stat-label">Courtyard Parking</span>
         </div>
-
-        <div class="search-field">
-          <label>
-            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-            Guests
-          </label>
-          <select id="guest-count">
-            <option value="2">2 Guests</option>
-            <option value="4">4 Guests</option>
-            <option value="6">6+ Guests</option>
-          </select>
-        </div>
-
-        <button type="submit" class="btn-primary" style="height: 100%;">
-          Search Stays
-        </button>
-      </form>
-
-      <!-- Sync Bar -->
-      <div class="sync-bar">
-        <span style="font-size: 0.9rem; color: var(--text-dim); font-weight: 600;">Multi-Channel Availability Sync:</span>
-        <div class="sync-badges">
-          <span class="badge badge-airbnb">Airbnb Superhost Verified</span>
-          <span class="badge badge-booking">Booking.com Preferred Partner</span>
+        <div class="hero-stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Keyless Self Check-in</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Featured Accommodations -->
-  <section class="section" id="properties">
+  <!-- Wellness & Amenities Highlight Section -->
+  <section class="section" id="wellness">
     <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Our Premier Portfolio</span>
-        <h2 class="section-title">Handcrafted Luxury Stays</h2>
-        <p class="section-description">Choose direct reservation to unlock zero booking fees, complimentary champagne, and priority early check-in.</p>
+      <div class="wellness-grid">
+        <div class="wellness-image-box reveal-left">
+          <img src="assets/images/lite_wellness_spa.png" alt="Lite Residence Wellness Spa Jacuzzi Sauna">
+        </div>
+
+        <div class="wellness-content reveal-right">
+          <span class="section-subtitle">Wellness & Guest Comfort</span>
+          <h2 class="section-title">A Peaceful Urban Retreat</h2>
+          <p>Set right next to the iconic Dealul Ciuperca hilltop viewpoint, Lite Residence combines modern architectural elegance with full serviced accommodation convenience.</p>
+          <p>Guests enjoy shared access to our private outdoor spa featuring a bubbling Jacuzzi hot tub and wooden sauna inside a enclosed private courtyard.</p>
+
+          <div class="amenity-list">
+            <div class="amenity-item">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+              Shared Jacuzzi & Sauna
+            </div>
+            <div class="amenity-item">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+              Private Courtyard Parking
+            </div>
+            <div class="amenity-item">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              Keyless Digital Entry
+            </div>
+            <div class="amenity-item">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+              Nespresso Coffee & Kitchen
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1-Page Scroll-Reveal Apartment Showcase (Rooms 01 to 07) -->
+  <section class="section" id="apartments">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-subtitle">Serviced Accommodations</span>
+        <h2 class="section-title">The 7 Residences</h2>
+        <p class="section-description">Scroll down to explore each apartment. Click any residence to view photos and complete your direct reservation.</p>
       </div>
 
-      <div class="properties-grid">
-        <!-- Property 1 -->
-        <article class="property-card">
-          <div class="property-image-wrapper">
-            <span class="property-tag badge badge-gold">Oceanfront</span>
-            <span class="property-sync-indicator badge badge-live-sync">iCal Live</span>
-            <img src="assets/images/seaside_villa.png" alt="Seaside Haven Villa" class="property-image">
+      <div class="room-showcase-list">
+
+        <!-- Room 01 -->
+        <article class="room-card-large reveal-left">
+          <div class="room-image-box">
+            <span class="room-badge badge badge-gold">Ground Floor • Private Terrace</span>
+            <img src="assets/images/room_01.png" alt="Lite Residence 01" class="room-image">
           </div>
-          <div class="property-body">
-            <div class="property-location">
-              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              Amalfi Coast, Italy
-            </div>
-            <h3 class="property-title">Seaside Haven Villa</h3>
-            <div class="property-specs">
-              <div class="property-spec-item">
-                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
-                4 Beds
+          <div class="room-details">
+            <span class="room-number">Residence 01</span>
+            <h3 class="room-title">Lite Residence 01</h3>
+            <p class="room-desc">Bright ground-floor apartment featuring a spacious master bedroom, fully equipped kitchen prepared for light cooking, Nespresso coffee setup, dining area, and a private wooden terrace ideal for morning coffee.</p>
+            <div class="room-specs-bar">
+              <div class="room-spec">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                1 Double Bed
               </div>
-              <div class="property-spec-item">
-                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
-                8 Guests
+              <div class="room-spec">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                1 Bathroom
               </div>
-              <div class="property-spec-item">
-                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-                Pool & Spa
+              <div class="room-spec">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path></svg>
+                Private Terrace
               </div>
             </div>
-            <div class="property-footer">
-              <div class="property-price">
-                <span class="price-amount">€450</span>
-                <span class="price-unit">per night (Direct Rate)</span>
-              </div>
-              <div class="ota-buttons">
-                <button class="btn-ota btn-ota-airbnb" onclick="window.open('https://airbnb.com', '_blank')">Airbnb</button>
-                <button class="btn-ota btn-ota-booking" onclick="window.open('https://booking.com', '_blank')">Booking.com</button>
-                <button class="btn-primary" style="padding: 8px 16px; font-size: 0.85rem;" onclick="openBookingModal('Seaside Haven Villa')">Book</button>
-              </div>
-            </div>
+            <a href="https://rezervare.flatwhite.ro/listing/700074193" target="_blank" class="btn-redirect">
+              View & Reserve Room 01 &rarr;
+            </a>
           </div>
         </article>
 
-        <!-- Property 2 -->
-        <article class="property-card">
-          <div class="property-image-wrapper">
-            <span class="property-tag badge badge-gold">Mountain Retreat</span>
-            <span class="property-sync-indicator badge badge-live-sync">iCal Live</span>
-            <img src="assets/images/alpine_chalet.png" alt="Alpine Crest Chalet" class="property-image">
+        <!-- Room 02 -->
+        <article class="room-card-large reverse reveal-right">
+          <div class="room-image-box">
+            <span class="room-badge badge badge-gold">1-Bedroom Suite • Balcony</span>
+            <img src="assets/images/room_03.png" alt="Lite Residence 02" class="room-image">
           </div>
-          <div class="property-body">
-            <div class="property-location">
-              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              Zermatt, Switzerland
-            </div>
-            <h3 class="property-title">Alpine Crest Chalet</h3>
-            <div class="property-specs">
-              <div class="property-spec-item">
-                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
-                5 Beds
+          <div class="room-details">
+            <span class="room-number">Residence 02</span>
+            <h3 class="room-title">Lite Residence 02</h3>
+            <p class="room-desc">Contemporary 1-bedroom suite equipped with heated floors, climate control air conditioning, private balcony overlooking the calm inner courtyard, and smart entertainment systems.</p>
+            <div class="room-specs-bar">
+              <div class="room-spec">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                1 Double Bed
               </div>
-              <div class="property-spec-item">
-                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
-                10 Guests
+              <div class="room-spec">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                1 Bathroom
               </div>
-              <div class="property-spec-item">
-                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-                Sauna & Fireplace
+              <div class="room-spec">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                Heated Floors
               </div>
             </div>
-            <div class="property-footer">
-              <div class="property-price">
-                <span class="price-amount">€580</span>
-                <span class="price-unit">per night (Direct Rate)</span>
-              </div>
-              <div class="ota-buttons">
-                <button class="btn-ota btn-ota-airbnb" onclick="window.open('https://airbnb.com', '_blank')">Airbnb</button>
-                <button class="btn-ota btn-ota-booking" onclick="window.open('https://booking.com', '_blank')">Booking.com</button>
-                <button class="btn-primary" style="padding: 8px 16px; font-size: 0.85rem;" onclick="openBookingModal('Alpine Crest Chalet')">Book</button>
-              </div>
-            </div>
+            <a href="https://rezervare.flatwhite.ro/listing/700074200" target="_blank" class="btn-redirect">
+              View & Reserve Room 02 &rarr;
+            </a>
           </div>
         </article>
 
-        <!-- Property 3 -->
-        <article class="property-card">
-          <div class="property-image-wrapper">
-            <span class="property-tag badge badge-gold">Skyline Luxury</span>
-            <span class="property-sync-indicator badge badge-live-sync">iCal Live</span>
-            <img src="assets/images/city_penthouse.png" alt="Skyline Haven Penthouse" class="property-image">
+        <!-- Room 03 -->
+        <article class="room-card-large reveal-left">
+          <div class="room-image-box">
+            <span class="room-badge badge badge-gold">Designer Suite • Lounge</span>
+            <img src="assets/images/room_03.png" alt="Lite Residence 03" class="room-image">
           </div>
-          <div class="property-body">
-            <div class="property-location">
-              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              Barcelona, Spain
-            </div>
-            <h3 class="property-title">Skyline Haven Penthouse</h3>
-            <div class="property-specs">
-              <div class="property-spec-item">
-                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
-                3 Beds
+          <div class="room-details">
+            <span class="room-number">Residence 03</span>
+            <h3 class="room-title">Lite Residence 03</h3>
+            <p class="room-desc">Stylish modern suite featuring elegant timber accents, a cozy plush lounge area, fully equipped kitchenette, high-speed fiber Wi-Fi, and seamless digital keyless entry.</p>
+            <div class="room-specs-bar">
+              <div class="room-spec">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                1 Queen Bed
               </div>
-              <div class="property-spec-item">
-                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
-                6 Guests
+              <div class="room-spec">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                1 Bathroom
               </div>
-              <div class="property-spec-item">
-                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-                Rooftop Terrace
+              <div class="room-spec">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path></svg>
+                Courtyard View
               </div>
             </div>
-            <div class="property-footer">
-              <div class="property-price">
-                <span class="price-amount">€390</span>
-                <span class="price-unit">per night (Direct Rate)</span>
-              </div>
-              <div class="ota-buttons">
-                <button class="btn-ota btn-ota-airbnb" onclick="window.open('https://airbnb.com', '_blank')">Airbnb</button>
-                <button class="btn-ota btn-ota-booking" onclick="window.open('https://booking.com', '_blank')">Booking.com</button>
-                <button class="btn-primary" style="padding: 8px 16px; font-size: 0.85rem;" onclick="openBookingModal('Skyline Haven Penthouse')">Book</button>
-              </div>
-            </div>
+            <a href="https://rezervare.flatwhite.ro/listing/700074201" target="_blank" class="btn-redirect">
+              View & Reserve Room 03 &rarr;
+            </a>
           </div>
         </article>
-      </div>
-    </div>
-  </section>
 
-  <!-- Availability & iCal Sync Calendar Section -->
-  <section class="section calendar-section" id="calendar">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Real-Time Channel Availability</span>
-        <h2 class="section-title">Unified Multi-Channel Calendar</h2>
-        <p class="section-description">Our calendar automatically aggregates bookings from <strong>Airbnb</strong>, <strong>Booking.com</strong>, and direct reservations via 2-way iCal background sync.</p>
-      </div>
-
-      <div class="calendar-box">
-        <div class="calendar-header-bar">
-          <div style="display: flex; align-items: center; gap: 16px;">
-            <h3 id="calendar-month-year" style="font-size: 1.5rem; color: var(--primary);">August 2026</h3>
-            <div style="display: flex; gap: 6px;">
-              <button id="prev-month" class="btn-secondary" style="padding: 6px 12px; font-size: 0.8rem;">&larr; Prev</button>
-              <button id="next-month" class="btn-secondary" style="padding: 6px 12px; font-size: 0.8rem;">Next &rarr;</button>
+        <!-- Room 04 -->
+        <article class="room-card-large reverse reveal-right">
+          <div class="room-image-box">
+            <span class="room-badge badge badge-gold">Hillside View • 1-Bedroom</span>
+            <img src="assets/images/lite_residence_facade.png" alt="Lite Residence 04" class="room-image">
+          </div>
+          <div class="room-details">
+            <span class="room-number">Residence 04</span>
+            <h3 class="room-title">Lite Residence 04</h3>
+            <p class="room-desc">Modern serviced apartment located on the upper level, offering tranquil views towards Dealul Ciuperca. Equipped with premium linens, dishwasher, microwave, and dedicated parking spot.</p>
+            <div class="room-specs-bar">
+              <div class="room-spec">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                1 King Bed
+              </div>
+              <div class="room-spec">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                1 Bathroom
+              </div>
+              <div class="room-spec">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                Hillside View
+              </div>
             </div>
+            <a href="https://rezervare.flatwhite.ro/listing/700074202" target="_blank" class="btn-redirect">
+              View & Reserve Room 04 &rarr;
+            </a>
           </div>
+        </article>
 
-          <div class="calendar-legend">
-            <div class="legend-item"><span class="legend-color color-available"></span> Available</div>
-            <div class="legend-item"><span class="legend-color color-airbnb"></span> Booked on Airbnb</div>
-            <div class="legend-item"><span class="legend-color color-booking"></span> Booked on Booking.com</div>
-            <div class="legend-item"><span class="legend-color color-direct"></span> Direct Reservation</div>
+        <!-- Room 05 -->
+        <article class="room-card-large reveal-left">
+          <div class="room-image-box">
+            <span class="room-badge badge badge-gold">Deluxe Terrace • Outdoor Dining</span>
+            <img src="assets/images/room_01.png" alt="Lite Residence 05" class="room-image">
           </div>
-        </div>
+          <div class="room-details">
+            <span class="room-number">Residence 05</span>
+            <h3 class="room-title">Lite Residence 05</h3>
+            <p class="room-desc">Deluxe apartment featuring an expanded outdoor terrace with dining table & chairs. Perfect for outdoor breakfasts and relaxed evening dining after exploring Oradea's historic center.</p>
+            <div class="room-specs-bar">
+              <div class="room-spec">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                1 King Bed
+              </div>
+              <div class="room-spec">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                1 Bathroom
+              </div>
+              <div class="room-spec">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path></svg>
+                Dining Terrace
+              </div>
+            </div>
+            <a href="https://rezervare.flatwhite.ro/listing/700074203" target="_blank" class="btn-redirect">
+              View & Reserve Room 05 &rarr;
+            </a>
+          </div>
+        </article>
 
-        <div class="calendar-grid">
-          <div class="calendar-day-header">Mon</div>
-          <div class="calendar-day-header">Tue</div>
-          <div class="calendar-day-header">Wed</div>
-          <div class="calendar-day-header">Thu</div>
-          <div class="calendar-day-header">Fri</div>
-          <div class="calendar-day-header">Sat</div>
-          <div class="calendar-day-header">Sun</div>
-        </div>
+        <!-- Room 06 -->
+        <article class="room-card-large reverse reveal-right">
+          <div class="room-image-box">
+            <span class="room-badge badge badge-gold">Executive Suite • Laundry Access</span>
+            <img src="assets/images/room_03.png" alt="Lite Residence 06" class="room-image">
+          </div>
+          <div class="room-details">
+            <span class="room-number">Residence 06</span>
+            <h3 class="room-title">Lite Residence 06</h3>
+            <p class="room-desc">Executive apartment designed for business travelers and extended stays. Includes dedicated workspace desk, high-speed Wi-Fi, shared laundry room access with washer & dryer, and Nespresso machine.</p>
+            <div class="room-specs-bar">
+              <div class="room-spec">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                1 Double Bed
+              </div>
+              <div class="room-spec">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                1 Bathroom
+              </div>
+              <div class="room-spec">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                Work Desk
+              </div>
+            </div>
+            <a href="https://rezervare.flatwhite.ro/listing/700074204" target="_blank" class="btn-redirect">
+              View & Reserve Room 06 &rarr;
+            </a>
+          </div>
+        </article>
 
-        <div class="calendar-grid" id="calendar-days-container" style="margin-top: 10px;">
-          <!-- Rendered dynamically by app.js -->
-        </div>
+        <!-- Room 07 -->
+        <article class="room-card-large reveal-left">
+          <div class="room-image-box">
+            <span class="room-badge badge badge-gold">Penthouse Residence • Top Floor</span>
+            <img src="assets/images/room_07.png" alt="Lite Residence 07" class="room-image">
+          </div>
+          <div class="room-details">
+            <span class="room-number">Residence 07</span>
+            <h3 class="room-title">Lite Residence 07</h3>
+            <p class="room-desc">Our flagship top-floor penthouse apartment with panoramic skyline views of Oradea and Dealul Ciuperca. Features elevated ceilings, premium lounge furniture, private balcony, and full kitchen.</p>
+            <div class="room-specs-bar">
+              <div class="room-spec">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                1 King Bed
+              </div>
+              <div class="room-spec">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                1 Bathroom
+              </div>
+              <div class="room-spec">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path></svg>
+                Skyline Balcony
+              </div>
+            </div>
+            <a href="https://rezervare.flatwhite.ro/listing/700074205" target="_blank" class="btn-redirect">
+              View & Reserve Room 07 &rarr;
+            </a>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
 
-  <!-- Why Direct? Features -->
-  <section class="section" id="features">
+  <!-- Location & Neighborhood Section -->
+  <section class="section location-section" id="location">
     <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Direct VIP Experience</span>
-        <h2 class="section-title">Why Book Directly With Us?</h2>
-        <p class="section-description">Skip third-party commission fees while receiving premium white-glove hospitality services.</p>
-      </div>
+      <div class="location-grid">
+        <div class="location-content reveal-left">
+          <span class="section-subtitle">Prime Location in Oradea</span>
+          <h2 class="section-title">Dealul Ciuperca & Beyond</h2>
+          <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 20px;">Lite Residence is set in a peaceful residential area of Oradea, offering the perfect balance between quiet relaxation and instant city access.</p>
 
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-          </div>
-          <h3 class="feature-title">Best Rate Guarantee</h3>
-          <p class="feature-desc">Save up to 15% compared to OTA platforms like Airbnb & Booking.com by booking straight from our official portal.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-          </div>
-          <h3 class="feature-title">Flexible Check-In/Out</h3>
-          <p class="feature-desc">Direct guests enjoy complimentary early check-in and late departure options whenever availability allows.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-          </div>
-          <h3 class="feature-title">VIP Concierge Service</h3>
-          <p class="feature-desc">Dedicated 24/7 guest relations, private chef bookings, airport transfers, and tailored local recommendations.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-          </div>
-          <h3 class="feature-title">Instant 2-Way Sync</h3>
-          <p class="feature-desc">Powered by Cyberfolks Cyber_UP! hosting for zero double-booking risk and instant email notifications.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Guest Reviews -->
-  <section class="section" id="reviews" style="background: var(--bg-surface);">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Verified Guest Stories</span>
-        <h2 class="section-title">Loved by Travelers Worldwide</h2>
-      </div>
-
-      <div class="reviews-grid">
-        <div class="review-card">
-          <div class="review-header">
-            <div class="review-author">
-              <div class="author-avatar">MB</div>
+          <div class="location-spot-list">
+            <div class="spot-item">
+              <div class="spot-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path></svg>
+              </div>
               <div>
-                <div class="author-name">Marcus & Elena B.</div>
-                <div class="author-source">Verified Airbnb Guest</div>
+                <div class="spot-title">Dealul Ciuperca Viewpoint</div>
+                <div class="spot-desc">Just steps from your door — popular hilltop park with panoramic sunset vistas over Oradea.</div>
               </div>
             </div>
-            <div class="review-stars">★★★★★</div>
+
+            <div class="spot-item">
+              <div class="spot-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              </div>
+              <div>
+                <div class="spot-title">Oradea Fortress & Historic Centre</div>
+                <div class="spot-desc">5 minutes away — explore Art Nouveau architecture, Calea Republicii cafes, and Piața Emanuil Gojdu.</div>
+              </div>
+            </div>
           </div>
-          <p class="review-text">"The Seaside Haven Villa surpassed all our expectations. Booking directly saved us money, and the team welcomed us with complimentary wine. 10/10 experience!"</p>
         </div>
 
-        <div class="review-card">
-          <div class="review-header">
-            <div class="review-author">
-              <div class="author-avatar">SK</div>
-              <div>
-                <div class="author-name">Sophie K.</div>
-                <div class="author-source">Verified Booking.com Guest</div>
-              </div>
-            </div>
-            <div class="review-stars">★★★★★</div>
-          </div>
-          <p class="review-text">"Flawless communication and absolute luxury. The live availability calendar made planning our family trip seamless and stress-free."</p>
+        <div class="location-card-box reveal-right">
+          <h3 style="font-size: 1.8rem; margin-bottom: 16px;">Key Guest Information</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 14px; color: var(--text-muted); font-size: 0.95rem;">
+            <li style="display: flex; align-items: center; gap: 10px;">
+              <span style="color: var(--primary); font-weight: 700;">•</span> Check-In: from 4:00 PM (Keyless Code Sent on Arrival Day)
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px;">
+              <span style="color: var(--primary); font-weight: 700;">•</span> Check-Out: until 11:00 AM
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px;">
+              <span style="color: var(--primary); font-weight: 700;">•</span> Quiet Hours: 9:00 PM – 8:00 AM
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px;">
+              <span style="color: var(--primary); font-weight: 700;">•</span> Dedicated On-Site Parking: 1 Spot per Residence
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -381,120 +384,47 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-col">
+        <div>
           <a href="#" class="brand-logo" style="margin-bottom: 16px;">
-            AURA<span>STAYS</span>
+            <span class="brand-name">LITE <span>RESIDENCE</span></span>
+            <span class="brand-location">ORADEA • ROMANIA</span>
           </a>
-          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">
-            Premium presentation and reservation portal for luxury vacation rentals. Powered by Cyberfolks Cyber_UP! hosting with automated 2-way iCal synchronization.
+          <p style="color: var(--text-muted); font-size: 0.95rem; max-width: 400px; margin-top: 12px;">
+            Sleek serviced aparthotel living at Dealul Ciuperca, Oradea. Managed by Flat White Properties (transitioning to independent direct hosting).
           </p>
-          <div style="display: flex; gap: 10px;">
-            <span class="badge badge-live-sync">Hosted on Cyber_UP! NVMe</span>
-          </div>
         </div>
 
-        <div class="footer-col">
-          <h4>Navigation</h4>
-          <ul class="footer-links">
-            <li><a href="#hero" class="footer-link">Home</a></li>
-            <li><a href="#properties" class="footer-link">Accommodations</a></li>
-            <li><a href="#calendar" class="footer-link">Live Calendar</a></li>
-            <li><a href="#features" class="footer-link">Why Book Direct</a></li>
+        <div>
+          <h4 style="color: #FFF; font-size: 1.1rem; margin-bottom: 20px;">Residences</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; color: var(--text-muted); font-size: 0.9rem;">
+            <li><a href="https://rezervare.flatwhite.ro/listing/700074193" target="_blank">Lite Residence 01</a></li>
+            <li><a href="https://rezervare.flatwhite.ro/listing/700074200" target="_blank">Lite Residence 02</a></li>
+            <li><a href="https://rezervare.flatwhite.ro/listing/700074201" target="_blank">Lite Residence 03</a></li>
+            <li><a href="https://rezervare.flatwhite.ro/listing/700074202" target="_blank">Lite Residence 04</a></li>
+            <li><a href="https://rezervare.flatwhite.ro/listing/700074203" target="_blank">Lite Residence 05</a></li>
+            <li><a href="https://rezervare.flatwhite.ro/listing/700074204" target="_blank">Lite Residence 06</a></li>
+            <li><a href="https://rezervare.flatwhite.ro/listing/700074205" target="_blank">Lite Residence 07</a></li>
           </ul>
         </div>
 
-        <div class="footer-col">
-          <h4>Channels</h4>
-          <ul class="footer-links">
-            <li><a href="https://airbnb.com" target="_blank" class="footer-link">Airbnb Superhost Profile</a></li>
-            <li><a href="https://booking.com" target="_blank" class="footer-link">Booking.com Partner Page</a></li>
-            <li><a href="ical-sync.php" target="_blank" class="footer-link">Raw iCal Sync Feed (.ics)</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Contact & Inquiries</h4>
-          <ul class="footer-links">
-            <li class="footer-link">📧 rezervari@yourdomain.ro</li>
-            <li class="footer-link">📧 contact@yourdomain.ro</li>
-            <li class="footer-link">📞 +40 700 000 000</li>
-            <li class="footer-link">📍 Cluj-Napoca / Bucharest, Romania</li>
+        <div>
+          <h4 style="color: #FFF; font-size: 1.1rem; margin-bottom: 20px;">Contact & Location</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; color: var(--text-muted); font-size: 0.9rem;">
+            <li>📍 Dealul Ciuperca Area, Oradea, Bihor, Romania</li>
+            <li>📧 contact@literesidence.ro</li>
+            <li>🌐 Managed via Flat White Properties (flatwhite.ro)</li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <div>© 2026 Aura Stays. All rights reserved.</div>
-        <div style="display: flex; gap: 20px;">
-          <a href="#" class="footer-link">Privacy Policy</a>
-          <a href="#" class="footer-link">Terms of Service</a>
-        </div>
+        <div>© 2026 Lite Residence Oradea. All rights reserved.</div>
+        <div>Cyberfolks Cyber_UP! Hosting Ready</div>
       </div>
     </div>
   </footer>
 
-  <!-- Direct Booking Inquiry Modal -->
-  <div class="modal-backdrop" id="booking-modal">
-    <div class="modal-window">
-      <button class="modal-close" id="modal-close">&times;</button>
-
-      <div style="margin-bottom: 24px;">
-        <span class="badge badge-gold" style="margin-bottom: 8px;">Direct Booking Inquiry</span>
-        <h3 id="modal-property-title" style="font-size: 1.6rem; color: #FFF;">Reserve Your Stay</h3>
-        <p style="color: var(--text-muted); font-size: 0.9rem;">Submit your details below for instant priority confirmation from our team.</p>
-      </div>
-
-      <form id="booking-form">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-          <div class="form-group">
-            <label>Full Name *</label>
-            <input type="text" class="form-input" placeholder="John Doe" required>
-          </div>
-          <div class="form-group">
-            <label>Email Address *</label>
-            <input type="email" class="form-input" placeholder="john@example.com" required>
-          </div>
-        </div>
-
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-          <div class="form-group">
-            <label>Phone / WhatsApp *</label>
-            <input type="tel" class="form-input" placeholder="+40 700 000 000" required>
-          </div>
-          <div class="form-group">
-            <label>Number of Guests</label>
-            <select class="form-input">
-              <option>2 Guests</option>
-              <option>4 Guests</option>
-              <option>6+ Guests</option>
-            </select>
-          </div>
-        </div>
-
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-          <div class="form-group">
-            <label>Check-In Date *</label>
-            <input type="date" class="form-input" required>
-          </div>
-          <div class="form-group">
-            <label>Check-Out Date *</label>
-            <input type="date" class="form-input" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label>Special Requests / Notes</label>
-          <textarea class="form-input" rows="3" placeholder="Airport transfer, champagne on arrival, quiet floor preference..."></textarea>
-        </div>
-
-        <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; padding: 14px;">
-          Submit Direct Reservation Request
-        </button>
-      </form>
-    </div>
-  </div>
-
-  <!-- JavaScript App Logic -->
+  <!-- JavaScript -->
   <script src="app.js"></script>
 </body>
 </html>
