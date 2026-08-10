@@ -2,12 +2,23 @@
    LITE RESIDENCE ORADEA - SCANDINAVIAN LUXURY APARTHOTEL ENGINE
    ========================================================================== */
 
-// Helper to generate full gallery image array excluding wellness photos
-function generateGallery(prefix, count, excludeList = []) {
+// Comprehensive Wellness Spa Photo Exclude Set (All shared Jacuzzi, Sauna, Pool photos)
+const WELLNESS_EXCLUDE = new Set([
+  'room_01_img_15.jpg', 'room_01_img_17.jpg', 'room_01_img_19.jpg', 'room_01_img_6.jpg',
+  'room_02_img_13.jpg', 'room_02_img_15.jpg', 'room_02_img_16.jpg',
+  'room_03_img_2.jpg', 'room_03_img_21.jpg',
+  'room_04_img_1.jpg', 'room_04_img_14.jpg', 'room_04_img_16.jpg', 'room_04_img_17.jpg',
+  'room_05_img_2.jpg',
+  'room_06_img_14.jpg', 'room_06_img_17.jpg', 'room_06_img_2.jpg',
+  'room_07_img_17.jpg', 'room_07_img_18.jpg', 'room_07_img_19.jpg'
+]);
+
+// Helper to generate room gallery excluding ALL wellness spa photos
+function generateCleanRoomGallery(prefix, count) {
   const images = [];
   for (let i = 1; i <= count; i++) {
     const filename = `${prefix}_img_${i}.jpg`;
-    if (!excludeList.includes(filename)) {
+    if (!WELLNESS_EXCLUDE.has(filename)) {
       images.push(`assets/images/${filename}`);
     }
   }
@@ -23,7 +34,7 @@ const WELLNESS_IMAGES = [
   'assets/images/room_02_img_13.jpg'
 ];
 
-// Room Database (Spa photos excluded from individual residence galleries)
+// Room Database (100% Excludes shared Spa/Wellness photos)
 const ROOM_DATA = {
   room_01: {
     id: 'room_01',
@@ -34,7 +45,7 @@ const ROOM_DATA = {
     beds: '1 Double Bed',
     baths: '1 Bathroom',
     feature: 'Private Terrace',
-    gallery: generateGallery('room_01', 19),
+    gallery: generateCleanRoomGallery('room_01', 19),
     desc: 'Bright ground-floor apartment featuring a spacious master bedroom, fully equipped kitchen prepared for light cooking, Nespresso coffee setup, dining area, high chair for families, and a private wooden terrace.'
   },
   room_02: {
@@ -46,7 +57,7 @@ const ROOM_DATA = {
     beds: '1 Double Bed',
     baths: '1 Bathroom',
     feature: 'Heated Floors',
-    gallery: generateGallery('room_02', 17, ['room_02_img_13.jpg', 'room_02_img_16.jpg']),
+    gallery: generateCleanRoomGallery('room_02', 17),
     desc: 'Contemporary 1-bedroom suite equipped with heated floors, climate control air conditioning, private balcony overlooking the calm courtyard, Nespresso machine, and high-speed Wi-Fi.'
   },
   room_03: {
@@ -58,7 +69,7 @@ const ROOM_DATA = {
     beds: '1 Queen Bed',
     baths: '1 Bathroom',
     feature: 'Courtyard View',
-    gallery: generateGallery('room_03', 21),
+    gallery: generateCleanRoomGallery('room_03', 21),
     desc: 'Stylish modern suite featuring elegant timber accents, a cozy plush lounge area, fully equipped kitchen for light cooking, Nespresso coffee setup, and keyless digital self check-in.'
   },
   room_04: {
@@ -70,7 +81,7 @@ const ROOM_DATA = {
     beds: '1 King Bed',
     baths: '1 Bathroom',
     feature: 'Hillside View',
-    gallery: generateGallery('room_04', 17),
+    gallery: generateCleanRoomGallery('room_04', 17),
     desc: 'Modern serviced apartment located on an upper level, offering peaceful views towards Dealul Ciuperca. Equipped with premium linens, dishwasher, microwave, stove, and dedicated parking spot.'
   },
   room_05: {
@@ -82,7 +93,7 @@ const ROOM_DATA = {
     beds: '1 King Bed',
     baths: '1 Bathroom',
     feature: 'Dining Terrace',
-    gallery: generateGallery('room_05', 22),
+    gallery: generateCleanRoomGallery('room_05', 22),
     desc: 'Deluxe apartment featuring an expanded outdoor terrace with outdoor dining furniture. Perfect for outdoor breakfasts and relaxed evening dining after exploring Oradeas historic center.'
   },
   room_06: {
@@ -94,7 +105,7 @@ const ROOM_DATA = {
     beds: '1 Double Bed',
     baths: '1 Bathroom',
     feature: 'Work Setup',
-    gallery: generateGallery('room_06', 17),
+    gallery: generateCleanRoomGallery('room_06', 17),
     desc: 'Executive apartment designed for business travelers and long-term stays. Includes dedicated workspace, high-speed Wi-Fi, shared laundry room access with washer & dryer, and Nespresso machine.'
   },
   room_07: {
@@ -106,7 +117,7 @@ const ROOM_DATA = {
     beds: '1 King Bed',
     baths: '1 Bathroom',
     feature: 'Skyline Balcony',
-    gallery: generateGallery('room_07', 23, ['room_07_img_17.jpg', 'room_07_img_18.jpg', 'room_07_img_19.jpg']),
+    gallery: generateCleanRoomGallery('room_07', 23),
     desc: 'Flagship top-floor penthouse apartment offering elevated views over Oradea skyline and Dealul Ciuperca. Features spacious lounge, private balcony, full kitchen, and premium linens.'
   }
 };
@@ -197,7 +208,7 @@ function setWellnessSlide(idx) {
   });
 }
 
-// 4. Spacious In-Site Room Gallery Modal Controller
+// 4. In-Site Room Gallery Modal Controller
 function openRoomModal(roomId) {
   const room = ROOM_DATA[roomId];
   if (!room) return;
