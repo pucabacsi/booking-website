@@ -22,9 +22,9 @@
       <ul class="nav-links">
         <li><a href="#hero" class="nav-link active" data-i18n="nav_overview">Prezentare Generală</a></li>
         <li><a href="#wellness" class="nav-link" data-i18n="nav_wellness">Wellness & Facilități</a></li>
-        <li><a href="#poi" class="nav-link" data-i18n="nav_poi">Atracții & POI</a></li>
         <li><a href="#apartments" class="nav-link" data-i18n="nav_apartments">Apartamente (01–07)</a></li>
         <li><a href="#location" class="nav-link" data-i18n="nav_location">Locație & Hartă</a></li>
+        <li><a href="#poi" class="nav-link" data-i18n="nav_poi">Atracții & POI</a></li>
       </ul>
 
       <!-- Cute Flag Language Selector Widget -->
@@ -136,28 +136,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Points of Interest & Tourist Attractions Section -->
-  <section class="section section-alt" id="poi">
-    <div class="container">
-      <div class="section-header reveal-up">
-        <span class="section-subtitle" data-i18n="poi_subtitle">Ghid Local & Atracții Turistice</span>
-        <h2 class="section-title" data-i18n="poi_title">Puncte de Interes Lângă Reședință</h2>
-        <p class="section-description" data-i18n="poi_desc">Descoperă cele mai frumoase atracții, restaurante gourmet, parcuri și cafenele din Oradea, calculate cu distanța exactă de la Lite Residence (Strada Olteniei 64).</p>
-      </div>
-
-      <!-- Category Filter Pills -->
-      <div class="poi-filter-bar reveal-up">
-        <button class="poi-filter-btn active" data-poi-filter="all" data-i18n="poi_filter_all">Toate Atracțiile</button>
-        <button class="poi-filter-btn" data-poi-filter="near" data-i18n="poi_filter_near">În Apropiere (&lt; 1 km)</button>
-        <button class="poi-filter-btn" data-poi-filter="dining" data-i18n="poi_filter_dining">Restaurante &amp; Cafenele</button>
-        <button class="poi-filter-btn" data-poi-filter="center" data-i18n="poi_filter_center">Centrul Istoric &amp; Spa</button>
-      </div>
-
-      <!-- POI Cards Grid (Populated dynamically in app.js) -->
-      <div class="poi-grid" id="poiGrid"></div>
     </div>
   </section>
 
@@ -448,6 +426,28 @@
           </iframe>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Points of Interest & Tourist Attractions Section (Right Below Locație & Hartă) -->
+  <section class="section" id="poi">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-subtitle" data-i18n="poi_subtitle">Ghid Local & Atracții Turistice</span>
+        <h2 class="section-title" data-i18n="poi_title">Puncte de Interes Lângă Reședință</h2>
+        <p class="section-description" data-i18n="poi_desc">Descoperă cele mai frumoase atracții, restaurante gourmet, parcuri și cafenele din Oradea, calculate cu distanța exactă de la Lite Residence (Strada Olteniei 64).</p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="poi-filter-bar reveal-up">
+        <button class="poi-filter-btn active" data-poi-filter="all" data-i18n="poi_filter_all">Toate Atracțiile</button>
+        <button class="poi-filter-btn" data-poi-filter="near" data-i18n="poi_filter_near">În Apropiere (&lt; 1 km)</button>
+        <button class="poi-filter-btn" data-poi-filter="dining" data-i18n="poi_filter_dining">Restaurante &amp; Cafenele</button>
+        <button class="poi-filter-btn" data-poi-filter="center" data-i18n="poi_filter_center">Centrul Istoric &amp; Spa</button>
+      </div>
+
+      <!-- POI Cards Grid (Populated dynamically in app.js) -->
+      <div class="poi-grid" id="poiGrid"></div>
     </div>
   </section>
 
