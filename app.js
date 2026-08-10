@@ -48,10 +48,11 @@ const WELLNESS_IMAGES = [
 ];
 
 // ==========================================================================
-// MULTI-LANGUAGE TRANSLATION DICTIONARY (RO DEFAULT, EN, DE, ES, FR, IT, PT)
+// MULTI-LANGUAGE TRANSLATION DICTIONARY (RO DEFAULT, HU, EN, DE, ES, FR, IT, PT)
 // ==========================================================================
 const LANG_CONFIG = {
   ro: { flagImg: 'https://flagcdn.com/w40/ro.png', code: 'RO', label: 'Română' },
+  hu: { flagImg: 'https://flagcdn.com/w40/hu.png', code: 'HU', label: 'Magyar' },
   en: { flagImg: 'https://flagcdn.com/w40/gb.png', code: 'EN', label: 'English' },
   de: { flagImg: 'https://flagcdn.com/w40/de.png', code: 'DE', label: 'Deutsch' },
   es: { flagImg: 'https://flagcdn.com/w40/es.png', code: 'ES', label: 'Español' },
@@ -61,6 +62,68 @@ const LANG_CONFIG = {
 };
 
 const TRANSLATIONS = {
+
+  hu: {
+    doc_title: 'Lite Residence Oradea | Luxus Apartmanhotel a Ciuperca-dombnál',
+    nav_overview: 'Áttekintés',
+    nav_wellness: 'Wellness & Szolgáltatások',
+    nav_apartments: 'Apartmanok (01–07)',
+    nav_location: 'Elhelyezkedés & Térkép',
+    nav_explore_btn: 'Apartmanok Felfedezése →',
+    
+    hero_badge: 'Új Vendéglátási Koncepció • Nagyvárad',
+    hero_title: 'Elegáns Apartmanok a <span>Ciuperca-dombnál</span>',
+    hero_subtitle: 'Fedezzen fel 7 modern designer apartmant Nagyváradon, a Ciuperca-domb szomszédságában (Strada Olteniei 64). Élvezze a zárt udvari wellness részleget Jacuzzival & Szaunával, a szobánkénti privát parkolót és a digitális kulcsnélküli bejelentkezést 16:00 órától.',
+    hero_stat_1: 'Szervizelt Apartmanok',
+    hero_stat_2: 'Jacuzzi & Szauna',
+    hero_stat_3: '1 Privát Parkolóhely szobánként',
+    hero_stat_4: 'Digitális Self Check-in',
+    
+    wellness_subtitle: 'Wellness & Kényelem',
+    wellness_title: 'Nyugodt Városi Oázis',
+    wellness_desc_1: 'A Ciuperca-domb közelében, csendes lakóövezetben található Lite Residence a modern építészeti eleganciát ötvözi a prémium szálláshelyek kényelmével.',
+    wellness_desc_2: 'Vendégeink korlátlanul használhatják a zárt belső udvarban található privát szabadtéri wellness részlegünket Jacuzzival és fatüzelésű szaunával.',
+    
+    amenity_1: 'Jacuzzi & Szauna',
+    amenity_2: '1 Privát Parkolóhely szobánként',
+    amenity_3: 'Digitális Kulcsnélküli Bejutás',
+    amenity_4: 'Nespresso Kávéfőző',
+    amenity_5: 'Padlófűtés & Klímaberendezés',
+    amenity_6: 'Mosógép & Szárítógép',
+    
+    apartments_subtitle: 'Apartman Kínálat',
+    apartments_title: 'A 7 Rezidencia',
+    apartments_desc: 'Kattintson bármelyik fotóra vagy gombra a teljes képgaléria megtekintéséhez és a foglaláshoz.',
+    
+    view_photos_btn: 'Képek & Foglalás',
+    spec_bath: '1 Fürdőszoba',
+    
+    location_subtitle: 'Elhelyezkedés & Információk',
+    location_title: 'Ciuperca-domb, Nagyvárad',
+    location_desc: 'Strada Olteniei 64, Nagyvárad, Bihar megye. Csendes lakóövezetben, mindössze pár lépésre a Ciuperca-dombtól.',
+    
+    policies_title: 'Házirend & Időpontok',
+    policy_checkin_title: 'Bejelentkezés (Check-In):',
+    policy_checkin_text: '16:00 órától (A digitális belépőkódokat az érkezés napján küldjük)',
+    policy_checkout_title: 'Kijelentkezés (Check-Out):',
+    policy_checkout_text: '11:00 óráig',
+    policy_quiet_title: 'Csendes Időszak:',
+    policy_quiet_text: '21:00 és 08:00 között (Aktív zajfigyelő szenzorok működnek)',
+    policy_visitors_title: 'Külső Vendégek:',
+    policy_visitors_text: 'Kizárólag 09:00 és 21:00 között engedélyezett',
+    policy_parking_title: 'Parkolás:',
+    policy_parking_text: '1 Privát Parkolóhely szobánként a zárt udvarban',
+    policy_starter_title: 'Kezdő Üdvözlőcsomag:',
+    policy_starter_text: 'Tartalmazza (toalettpapír, szappan, tusfürdő, mosogatószer, Nespresso kávékapszulák)',
+    
+    footer_about: 'Új vendéglátási koncepció a Ciuperca-dombnál, Nagyváradon. Managed by Flat White Properties.',
+    footer_residences_title: 'Rezidenciák (01–07)',
+    footer_contact_title: 'Elhelyezkedés & Kapcsolat',
+    footer_address_label: 'Cím:',
+    footer_contact_label: 'Kapcsolat:',
+    footer_rights: '© 2026 Lite Residence Oradea. Minden jog fenntartva.',
+    modal_reserve_btn: 'Foglalás a FlatWhite Properties-en'
+  },
   ro: {
     doc_title: 'Lite Residence Oradea | Apartamente în Regim Hotelier la Dealul Ciuperca',
     nav_overview: 'Prezentare Generală',
@@ -505,6 +568,7 @@ const LOCALIZED_ROOM_DATA = {
     flatwhiteUrl: 'https://rezervare.flatwhite.ro/listing/700074193',
     gallery: generateCleanRoomGallery('room_01', 19),
     subtitle: {
+      hu: 'Földszint • Privát Terasz',
       ro: 'Parter • Terasă Privată',
       en: 'Ground Floor • Private Terrace',
       de: 'Erdgeschoss • Private Terrasse',
@@ -514,15 +578,19 @@ const LOCALIZED_ROOM_DATA = {
       pt: 'Rés-do-chão • Terraço Privado'
     },
     beds: {
+      hu: '1 Franciágy',
       ro: '1 Pat Matrimonial', en: '1 Double Bed', de: '1 Doppelbett', es: '1 Cama Doble', fr: '1 Grand Lit', it: '1 Letto Matrimoniale', pt: '1 Cama Casal'
     },
     baths: {
+      hu: '1 Fürdőszoba',
       ro: '1 Baie', en: '1 Bathroom', de: '1 Badezimmer', es: '1 Baño', fr: '1 Salle de Bain', it: '1 Bagno', pt: '1 Casa de Banho'
     },
     feature: {
+      hu: 'Privát Terasz',
       ro: 'Terasă Privată', en: 'Private Terrace', de: 'Private Terrasse', es: 'Terraza Privada', fr: 'Terrasse Privée', it: 'Terrazza Privata', pt: 'Terraço Privado'
     },
     desc: {
+      hu: 'Világos földszinti apartman tágas hálószobával, főzésre felszerelt konyhával, Nespresso kávéfőzővel, étkezősarokkal, etetőszékkel és privát fa terasszal.',
       ro: 'Apartament luminos la parter, cu dormitor matrimonial spațios, bucătărie complet echipată pentru gătit ușor, espressor Nespresso, zonă de dining, scaun înalt pentru copii și terasă din lemn.',
       en: 'Bright ground-floor apartment featuring a spacious master bedroom, fully equipped kitchen prepared for light cooking, Nespresso coffee setup, dining area, high chair for families, and a private wooden terrace.',
       de: 'Lichtdurchflutetes Apartment im Erdgeschoss mit geräumigem Schlafzimmer, voll ausgestatteter Küche für leichte Gerichte, Nespresso-Maschine, Essbereich und privater Holzterrasse.',
@@ -539,6 +607,7 @@ const LOCALIZED_ROOM_DATA = {
     flatwhiteUrl: 'https://rezervare.flatwhite.ro/listing/700074200',
     gallery: generateCleanRoomGallery('room_02', 17),
     subtitle: {
+      hu: '1-Hálószobás Suite • Erkély',
       ro: 'Suite 1-Dormitor • Balcon',
       en: '1-Bedroom Suite • Courtyard Balcony',
       de: '1-Schlafzimmer Suite • Balkon',
@@ -548,15 +617,19 @@ const LOCALIZED_ROOM_DATA = {
       pt: 'Suite 1 Quarto • Varanda'
     },
     beds: {
+      hu: '1 Franciágy',
       ro: '1 Pat Matrimonial', en: '1 Double Bed', de: '1 Doppelbett', es: '1 Cama Doble', fr: '1 Grand Lit', it: '1 Letto Matrimoniale', pt: '1 Cama Casal'
     },
     baths: {
+      hu: '1 Fürdőszoba',
       ro: '1 Baie', en: '1 Bathroom', de: '1 Badezimmer', es: '1 Baño', fr: '1 Salle de Bain', it: '1 Bagno', pt: '1 Casa de Banho'
     },
     feature: {
+      hu: 'Padlófűtés',
       ro: 'Încălzire Pardoseală', en: 'Heated Floors', de: 'Fussbodenheizung', es: 'Suelo Radiante', fr: 'Chauffage au Sol', it: 'Riscaldamento Pavimento', pt: 'Piso Aquecido'
     },
     desc: {
+      hu: 'Modern 1-hálószobás suite padlófűtéssel, klímával, belső udvarra néző privát erkéllyel, Nespresso géppel és nagysebességű Wi-Fi-vel.',
       ro: 'Suite contemporană cu 1 dormitor, încălzire în pardoseală, aer condiționat, balcon privat cu vedere spre curtea interioară, aparat Nespresso și Wi-Fi de mare viteză.',
       en: 'Contemporary 1-bedroom suite equipped with heated floors, climate control air conditioning, private balcony overlooking the calm courtyard, Nespresso machine, and high-speed Wi-Fi.',
       de: 'Moderne 1-Schlafzimmer-Suite mit Fussbodenheizung, Klimaanlage, privatem Balkon mit Blick in den ruhigen Innenhof, Nespresso-Maschine und schnellem WLAN.',
@@ -573,6 +646,7 @@ const LOCALIZED_ROOM_DATA = {
     flatwhiteUrl: 'https://rezervare.flatwhite.ro/listing/700074201',
     gallery: generateCleanRoomGallery('room_03', 21),
     subtitle: {
+      hu: 'Designer Suite • Nappali',
       ro: 'Suite Designer • Living',
       en: 'Designer Suite • Lounge',
       de: 'Designer Suite • Lounge',
@@ -582,15 +656,19 @@ const LOCALIZED_ROOM_DATA = {
       pt: 'Suite Designer • Sala'
     },
     beds: {
+      hu: '1 Queen Size Ágy',
       ro: '1 Pat Queen Size', en: '1 Queen Bed', de: '1 Queen-Size Bett', es: '1 Cama Queen', fr: '1 Lit Queen', it: '1 Letto Queen', pt: '1 Cama Queen'
     },
     baths: {
+      hu: '1 Fürdőszoba',
       ro: '1 Baie', en: '1 Bathroom', de: '1 Badezimmer', es: '1 Baño', fr: '1 Salle de Bain', it: '1 Bagno', pt: '1 Casa de Banho'
     },
     feature: {
+      hu: 'Udvari Kilátás',
       ro: 'Vedere Curte', en: 'Courtyard View', de: 'Innenhofblick', es: 'Vistas al Patio', fr: 'Vue Cour', it: 'Vista Cortile', pt: 'Vista Pátio'
     },
     desc: {
+      hu: 'Stílusos modern suite fa elemekkel, kényelmes nappalival, felszerelt konyhával, Nespresso kávéfőzővel és digitális önálló bejelentkezéssel.',
       ro: 'Suite modernă cu accente elegante din lemn, zonă confortabilă de living, bucătărie complet utilată, espressor Nespresso și check-in digital automatizat.',
       en: 'Stylish modern suite featuring elegant timber accents, a cozy plush lounge area, fully equipped kitchen for light cooking, Nespresso coffee setup, and keyless digital self check-in.',
       de: 'Stilvolle moderne Suite mit edlen Holzelementen, gemütlichem Loungebereich, voll ausgestatteter Küche, Nespresso-Maschine und schlüssellosem Check-in.',
@@ -607,6 +685,7 @@ const LOCALIZED_ROOM_DATA = {
     flatwhiteUrl: 'https://rezervare.flatwhite.ro/listing/700074202',
     gallery: generateCleanRoomGallery('room_04', 17),
     subtitle: {
+      hu: 'Kilátás a Ciuperca-dombra • 1-Hálószoba',
       ro: 'Vedere Dealul Ciuperca • 1-Dormitor',
       en: 'Hillside View • 1-Bedroom',
       de: 'Hügelblick • 1-Schlafzimmer',
@@ -616,15 +695,19 @@ const LOCALIZED_ROOM_DATA = {
       pt: 'Vista Colina • 1 Quarto'
     },
     beds: {
+      hu: '1 King Size Ágy',
       ro: '1 Pat King Size', en: '1 King Bed', de: '1 King-Size Bett', es: '1 Cama King', fr: '1 Lit King', it: '1 Letto King', pt: '1 Cama King'
     },
     baths: {
+      hu: '1 Fürdőszoba',
       ro: '1 Baie', en: '1 Bathroom', de: '1 Badezimmer', es: '1 Baño', fr: '1 Salle de Bain', it: '1 Bagno', pt: '1 Casa de Banho'
     },
     feature: {
+      hu: 'Kilátás a Ciuperca-dombra',
       ro: 'Vedere Dealul Ciuperca', en: 'Hillside View', de: 'Hügelblick', es: 'Vistas a la Colina', fr: 'Vue Colline', it: 'Vista Collina', pt: 'Vista Colina'
     },
     desc: {
+      hu: 'Modern emeleti apartman gyönyörű kilátással a Ciuperca-dombra. Prémium ágyneművel, mosogatógéppel, mikrohullámú sütővel, főzőlappal és saját parkolóval.',
       ro: 'Apartament modern situat la etaj superior, cu vedere superbă către Dealul Ciuperca. Echipat cu lenjerii premium, mașină de spălat vase, cuptor cu microunde, plită și loc de parcare dedicat.',
       en: 'Modern serviced apartment located on an upper level, offering peaceful views towards Dealul Ciuperca. Equipped with premium linens, dishwasher, microwave, stove, and dedicated parking spot.',
       de: 'Modernes Apartment in den oberen Etagen mit ruhigem Blick auf den Dealul Ciuperca. Ausgestattet mit Premium-Bettwäsche, Geschirrspüler, Mikrowelle und eigenem Parkplatz.',
@@ -641,6 +724,7 @@ const LOCALIZED_ROOM_DATA = {
     flatwhiteUrl: 'https://rezervare.flatwhite.ro/listing/700074203',
     gallery: generateCleanRoomGallery('room_05', 22),
     subtitle: {
+      hu: 'Deluxe Terasz • Kültéri Étkező',
       ro: 'Terasă Deluxe • Mobilier Exterior',
       en: 'Deluxe Terrace • Outdoor Dining',
       de: 'Deluxe Terrasse • Essbereich Aussen',
@@ -650,15 +734,19 @@ const LOCALIZED_ROOM_DATA = {
       pt: 'Terraço Deluxe • Zona de Refeições'
     },
     beds: {
+      hu: '1 King Size Ágy',
       ro: '1 Pat King Size', en: '1 King Bed', de: '1 King-Size Bett', es: '1 Cama King', fr: '1 Lit King', it: '1 Letto King', pt: '1 Cama King'
     },
     baths: {
+      hu: '1 Fürdőszoba',
       ro: '1 Baie', en: '1 Bathroom', de: '1 Badezimmer', es: '1 Baño', fr: '1 Salle de Bain', it: '1 Bagno', pt: '1 Casa de Banho'
     },
     feature: {
+      hu: 'Terasz Étkezővel',
       ro: 'Terasă Dining', en: 'Dining Terrace', de: 'Ess-Terrasse', es: 'Terraza Comedor', fr: 'Terrasse Repas', it: 'Terrazza Pranzo', pt: 'Terraço Refeições'
     },
     desc: {
+      hu: 'Deluxe apartman tágas szabadtéri terasszal és étkezőbútorokkal. Tökéletes szabadtéri reggelikhez és esti pihenéshez.',
       ro: 'Apartament Deluxe cu terasă exterioară generoasă, dotată cu mese și scaune. Perfect pentru micul dejun în aer liber și seri relaxante după explorarea centrului istoric din Oradea.',
       en: 'Deluxe apartment featuring an expanded outdoor terrace with outdoor dining furniture. Perfect for outdoor breakfasts and relaxed evening dining after exploring Oradea\'s historic center.',
       de: 'Deluxe-Apartment mit großzügiger Außenterrasse und Gartenmöbeln. Perfekt für das Frühstück im Freien und entspannte Abende nach der Erkundung von Oradea.',
@@ -675,6 +763,7 @@ const LOCALIZED_ROOM_DATA = {
     flatwhiteUrl: 'https://rezervare.flatwhite.ro/listing/700074204',
     gallery: generateCleanRoomGallery('room_06', 17),
     subtitle: {
+      hu: 'Executive Suite • Munkasarok',
       ro: 'Suite Executive • Spațiu Lucru',
       en: 'Executive Suite • Extended Stay',
       de: 'Executive Suite • Arbeitsbereich',
@@ -684,15 +773,19 @@ const LOCALIZED_ROOM_DATA = {
       pt: 'Suite Executive • Espaço Trabalho'
     },
     beds: {
+      hu: '1 Franciágy',
       ro: '1 Pat Matrimonial', en: '1 Double Bed', de: '1 Doppelbett', es: '1 Cama Doble', fr: '1 Grand Lit', it: '1 Letto Matrimoniale', pt: '1 Cama Casal'
     },
     baths: {
+      hu: '1 Fürdőszoba',
       ro: '1 Baie', en: '1 Bathroom', de: '1 Badezimmer', es: '1 Baño', fr: '1 Salle de Bain', it: '1 Bagno', pt: '1 Casa de Banho'
     },
     feature: {
+      hu: 'Íróasztal & Munkasarok',
       ro: 'Birou de Lucru', en: 'Work Setup', de: 'Arbeitsbereich', es: 'Escritorio Trabajo', fr: 'Espace Travail', it: 'Postazione Lavoro', pt: 'Secretária Trabalho'
     },
     desc: {
+      hu: 'Executive apartman üzleti utazóknak és hosszabb tartózkodásra. Külön munkasarokkal, szupergyors Wi-Fi-vel, közös mosókonyha használattal és Nespresso géppel.',
       ro: 'Apartament Executive conceput pentru călătorii de afaceri și sejururi prelungite. Include birou dedicat de lucru, Wi-Fi ultra-rapid, acces la spălătorie comună și espressor Nespresso.',
       en: 'Executive apartment designed for business travelers and long-term stays. Includes dedicated workspace, high-speed Wi-Fi, shared laundry room access with washer & dryer, and Nespresso machine.',
       de: 'Executive-Apartment für Geschäftsreisende und längere Aufenthalte. Mit eigenem Arbeitsplatz, Highspeed-WLAN, Zugang zum Waschraum und Nespresso-Maschine.',
@@ -709,6 +802,7 @@ const LOCALIZED_ROOM_DATA = {
     flatwhiteUrl: 'https://rezervare.flatwhite.ro/listing/700074205',
     gallery: generateCleanRoomGallery('room_07', 23),
     subtitle: {
+      hu: 'Penthouse • Legfelső Emelet',
       ro: 'Penthouse • Ultimul Etaj',
       en: 'Penthouse Residence • Top Floor',
       de: 'Penthouse Residence • Oberste Etage',
@@ -718,15 +812,19 @@ const LOCALIZED_ROOM_DATA = {
       pt: 'Penthouse • Último Andar'
     },
     beds: {
+      hu: '1 King Size Ágy',
       ro: '1 Pat King Size', en: '1 King Bed', de: '1 King-Size Bett', es: '1 Cama King', fr: '1 Lit King', it: '1 Letto King', pt: '1 Cama King'
     },
     baths: {
+      hu: '1 Fürdőszoba',
       ro: '1 Baie', en: '1 Bathroom', de: '1 Badezimmer', es: '1 Baño', fr: '1 Salle de Bain', it: '1 Bagno', pt: '1 Casa de Banho'
     },
     feature: {
+      hu: 'Panoráma Erkély',
       ro: 'Balcon Panoramic', en: 'Skyline Balcony', de: 'Panorama-Balkon', es: 'Balcón Panorámico', fr: 'Balcon Vue Panoramique', it: 'Balcone Panoramico', pt: 'Varanda Panorâmica'
     },
     desc: {
+      hu: 'Exkluzív legfelső emeleti penthouse pazar panorámával Nagyváradra és a Ciuperca-dombra. Tágas nappalival, privát erkéllyel és teljes konyhával.',
       ro: 'Penthouse-ul nostru exclusiv de la ultimul etaj, ce oferă o panoramă spectaculoasă asupra orașului Oradea și Dealului Ciuperca. Cu living generos, balcon privat, bucătărie completă și lenjerii premium.',
       en: 'Flagship top-floor penthouse apartment offering elevated views over Oradea skyline and Dealul Ciuperca. Features spacious lounge, private balcony, full kitchen, and premium linens.',
       de: 'Exklusives Penthouse in der obersten Etage mit herrlichem Panoramablick auf Oradea und den Dealul Ciuperca. Mit großem Wohnzimmer, privatem Balkon und voll ausgestatteter Küche.',
