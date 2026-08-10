@@ -522,12 +522,18 @@ button {
   min-height: 400px;
   overflow: hidden;
   background-color: #F0F2F5;
+  cursor: pointer;
+}
+
+.room-image-box:hover .room-image {
+  transform: scale(1.04);
 }
 
 .room-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.4s ease;
 }
 
 .room-badge {
@@ -613,7 +619,7 @@ button {
 }
 
 /* ==========================================================================
-   PERFECT SPACIOUS LITE ROOM GALLERY MODAL SYSTEM
+   PERFECT SPACIOUS LITE ROOM GALLERY MODAL SYSTEM (ZERO SCROLLBARS)
    ========================================================================== */
 .room-modal-overlay {
   position: fixed;
@@ -688,7 +694,7 @@ button {
   height: 100%;
 }
 
-/* Multi-Photo Gallery Side */
+/* Multi-Photo Gallery Side - ZERO SCROLLBARS */
 .modal-gallery-side {
   position: relative;
   height: 100%;
@@ -761,6 +767,7 @@ button {
 .modal-arrow-prev { left: 16px; }
 .modal-arrow-next { right: 16px; }
 
+/* Thumbnail strip - ZERO SCROLLBARS SHOWING */
 .modal-thumbs-strip {
   display: flex;
   gap: 8px;
@@ -770,7 +777,14 @@ button {
   width: 100%;
   background: #0B0D12;
   overflow-x: auto;
+  overflow-y: hidden;
   border-top: 1px solid rgba(255,255,255,0.08);
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE & Edge */
+}
+
+.modal-thumbs-strip::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 
 .modal-thumb {
