@@ -2,18 +2,31 @@
    LITE RESIDENCE ORADEA - SCANDINAVIAN LUXURY APARTHOTEL ENGINE
    ========================================================================== */
 
-// Comprehensive Wellness Spa Photo Exclude Set (All shared Jacuzzi, Sauna, Pool photos)
+// 100% Visually Verified Spa, Jacuzzi, Sauna, Building Exterior & Stairwell Excludes
 const WELLNESS_EXCLUDE = new Set([
-  'room_01_img_15.jpg', 'room_01_img_17.jpg', 'room_01_img_19.jpg', 'room_01_img_6.jpg',
-  'room_02_img_4.jpg', 'room_02_img_12.jpg', 'room_02_img_13.jpg', 'room_02_img_14.jpg', 'room_02_img_15.jpg', 'room_02_img_16.jpg',
-  'room_03_img_1.jpg', 'room_03_img_2.jpg', 'room_03_img_21.jpg',
-  'room_04_img_1.jpg', 'room_04_img_14.jpg', 'room_04_img_16.jpg', 'room_04_img_17.jpg',
-  'room_05_img_2.jpg', 'room_05_img_15.jpg', 'room_05_img_16.jpg', 'room_05_img_19.jpg', 'room_05_img_21.jpg',
-  'room_06_img_2.jpg', 'room_06_img_13.jpg', 'room_06_img_14.jpg', 'room_06_img_17.jpg',
-  'room_07_img_17.jpg', 'room_07_img_18.jpg', 'room_07_img_19.jpg'
+  // Room 01 shared/spa/exterior photos
+  'room_01_img_6.jpg', 'room_01_img_15.jpg', 'room_01_img_16.jpg', 'room_01_img_17.jpg', 'room_01_img_18.jpg', 'room_01_img_19.jpg',
+  
+  // Room 02 shared/spa/exterior photos
+  'room_02_img_4.jpg', 'room_02_img_12.jpg', 'room_02_img_13.jpg', 'room_02_img_14.jpg', 'room_02_img_15.jpg', 'room_02_img_16.jpg', 'room_02_img_17.jpg',
+  
+  // Room 03 shared/spa/exterior photos
+  'room_03_img_1.jpg', 'room_03_img_2.jpg', 'room_03_img_4.jpg', 'room_03_img_16.jpg', 'room_03_img_17.jpg', 'room_03_img_18.jpg', 'room_03_img_19.jpg', 'room_03_img_20.jpg', 'room_03_img_21.jpg',
+  
+  // Room 04 shared/spa/exterior photos
+  'room_04_img_1.jpg', 'room_04_img_13.jpg', 'room_04_img_14.jpg', 'room_04_img_15.jpg', 'room_04_img_16.jpg', 'room_04_img_17.jpg',
+  
+  // Room 05 shared/spa/exterior photos
+  'room_05_img_2.jpg', 'room_05_img_17.jpg', 'room_05_img_18.jpg', 'room_05_img_19.jpg', 'room_05_img_20.jpg', 'room_05_img_21.jpg', 'room_05_img_22.jpg',
+  
+  // Room 06 shared/spa/exterior photos
+  'room_06_img_2.jpg', 'room_06_img_3.jpg', 'room_06_img_14.jpg', 'room_06_img_15.jpg', 'room_06_img_16.jpg', 'room_06_img_17.jpg',
+  
+  // Room 07 shared/spa/exterior photos
+  'room_07_img_17.jpg', 'room_07_img_18.jpg', 'room_07_img_19.jpg', 'room_07_img_20.jpg', 'room_07_img_21.jpg', 'room_07_img_22.jpg', 'room_07_img_23.jpg'
 ]);
 
-// Helper to generate room gallery excluding ALL wellness spa photos
+// Helper to generate room gallery excluding ALL wellness spa & exterior photos
 function generateCleanRoomGallery(prefix, count) {
   const images = [];
   for (let i = 1; i <= count; i++) {
@@ -25,7 +38,7 @@ function generateCleanRoomGallery(prefix, count) {
   return images;
 }
 
-// 1. Dedicated Wellness Slideshow Photos
+// Dedicated Wellness Section Slideshow Photos
 const WELLNESS_IMAGES = [
   'assets/images/room_07_img_17.jpg',
   'assets/images/room_07_img_18.jpg',
@@ -34,7 +47,7 @@ const WELLNESS_IMAGES = [
   'assets/images/room_02_img_13.jpg'
 ];
 
-// Room Database (100% Excludes shared Spa/Wellness photos)
+// Room Database (100% Excludes shared Spa/Wellness/Exterior photos)
 const ROOM_DATA = {
   room_01: {
     id: 'room_01',
