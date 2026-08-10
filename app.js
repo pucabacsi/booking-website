@@ -133,6 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollReveal();
   initModalListeners();
   initWellnessSlideshow();
+  initThumbnailDragScroll();
 });
 
 // 1. Sticky Navigation Blur
@@ -248,23 +249,32 @@ function renderModalGallery(room) {
   }
 
   thumbsContainer.innerHTML = '';
+  let activeThumbElement = null;
+
   room.gallery.forEach((imgUrl, idx) => {
     const thumb = document.createElement('img');
     thumb.src = imgUrl;
     thumb.className = `modal-thumb ${idx === currentGalleryIdx ? 'active' : ''}`;
     thumb.title = `Photo ${idx + 1} of ${room.gallery.length}`;
+    
     thumb.addEventListener('click', () => {
       currentGalleryIdx = idx;
-      mainImg.src = room.gallery[currentGalleryIdx];
-      if (photoCounter) {
-        photoCounter.textContent = `${currentGalleryIdx + 1} / ${room.gallery.length}`;
-      }
-      document.querySelectorAll('.modal-thumb').forEach((t, i) => {
-        t.classList.toggle('active', i === currentGalleryIdx);
-      });
+      renderModalGallery(room);
     });
+
+    if (idx === currentGalleryIdx) {
+      activeThumbElement = thumb;
+    }
+
     thumbsContainer.appendChild(thumb);
   });
+
+  // Auto scroll active thumbnail into view smoothly
+  if (activeThumbElement) {
+    setTimeout(() => {
+      activeThumbElement.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    }, 40);
+  }
 }
 
 function nextModalPhoto() {
@@ -308,4 +318,47 @@ function initModalListeners() {
     if (e.key === 'ArrowRight') nextModalPhoto();
     if (e.key === 'ArrowLeft') prevModalPhoto();
   });
+}
+
+// 5. Mouse Wheel & Drag Scrolling for Thumbnail Strip
+function initThumbnailDragScroll() {
+  const container = document.getElementById('modalThumbsContainer');
+  if (!container) return;
+
+  let isDown = false;
+  let startX = 0;
+  let scrollLeft = 0;
+
+  container.addEventListener('mousedown', (e) => {
+    isDown = true;
+    container.classList.add('dragging');
+    startX = e.pageX - container.offsetLeft;
+    scrollLeft = container.scrollLeft;
+  });
+
+  container.addEventListener('mouseleave', () => {
+    isDown = false;
+    container.classList.remove('dragging');
+  });
+
+  container.addEventListener('mouseup', () => {
+    isDown = false;
+    container.classList.remove('dragging');
+  });
+
+  container.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - container.offsetLeft;
+    const walk = (x - startX) * 2.5;
+    container.scrollLeft = scrollLeft - walk;
+  });
+
+  // Enable mouse wheel horizontal scrolling
+  container.addEventListener('wheel', (e) => {
+    if (e.deltaY !== 0) {
+      e.preventDefault();
+      container.scrollLeft += e.deltaY * 1.5;
+    }
+  }, { passive: false });
 }
