@@ -710,6 +710,21 @@ button {
   transition: opacity 0.3s ease;
 }
 
+.modal-photo-counter {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 6;
+  background: rgba(11, 13, 18, 0.82);
+  color: #FFF;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  backdrop-filter: blur(4px);
+}
+
 .modal-arrow-btn {
   position: absolute;
   top: 50%;

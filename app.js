@@ -1,8 +1,17 @@
 /* ==========================================================================
-   LITE RESIDENCE ORADEA - IN-SITE GALLERY MODAL & WELLNESS SLIDESHOW
+   LITE RESIDENCE ORADEA - COMPLETE FULL-GALLERY IN-SITE MODAL & SLIDESHOW
    ========================================================================== */
 
-// Full Gallery Database extracted from official FlatWhite Hostify listings
+// Helper to generate full gallery image array paths
+function generateGallery(prefix, count) {
+  const images = [];
+  for (let i = 1; i <= count; i++) {
+    images.push(`assets/images/${prefix}_img_${i}.jpg`);
+  }
+  return images;
+}
+
+// Complete Photo Galleries for All 7 Residences
 const ROOM_DATA = {
   room_01: {
     id: 'room_01',
@@ -13,14 +22,7 @@ const ROOM_DATA = {
     beds: '1 Double Bed',
     baths: '1 Bathroom',
     feature: 'Private Terrace',
-    gallery: [
-      'assets/images/room_01_img_1.jpg',
-      'assets/images/room_01_img_2.jpg',
-      'assets/images/room_01_img_3.jpg',
-      'assets/images/room_01_img_4.jpg',
-      'assets/images/room_01_img_5.jpg',
-      'assets/images/room_01_img_6.jpg'
-    ],
+    gallery: generateGallery('room_01', 19),
     desc: 'Bright ground-floor apartment featuring a spacious master bedroom, fully equipped kitchen prepared for light cooking, Nespresso coffee setup, dining area, high chair for families, and a private wooden terrace.'
   },
   room_02: {
@@ -32,14 +34,7 @@ const ROOM_DATA = {
     beds: '1 Double Bed',
     baths: '1 Bathroom',
     feature: 'Heated Floors',
-    gallery: [
-      'assets/images/room_02_img_1.jpg',
-      'assets/images/room_02_img_2.jpg',
-      'assets/images/room_02_img_3.jpg',
-      'assets/images/room_02_img_4.jpg',
-      'assets/images/room_02_img_5.jpg',
-      'assets/images/room_02_img_6.jpg'
-    ],
+    gallery: generateGallery('room_02', 17),
     desc: 'Contemporary 1-bedroom suite equipped with heated floors, climate control air conditioning, private balcony overlooking the calm courtyard, Nespresso machine, and high-speed Wi-Fi.'
   },
   room_03: {
@@ -51,14 +46,7 @@ const ROOM_DATA = {
     beds: '1 Queen Bed',
     baths: '1 Bathroom',
     feature: 'Courtyard View',
-    gallery: [
-      'assets/images/room_03_img_1.jpg',
-      'assets/images/room_03_img_2.jpg',
-      'assets/images/room_03_img_3.jpg',
-      'assets/images/room_03_img_4.jpg',
-      'assets/images/room_03_img_5.jpg',
-      'assets/images/room_03_img_6.jpg'
-    ],
+    gallery: generateGallery('room_03', 21),
     desc: 'Stylish modern suite featuring elegant timber accents, a cozy plush lounge area, fully equipped kitchen for light cooking, Nespresso coffee setup, and keyless digital self check-in.'
   },
   room_04: {
@@ -70,14 +58,7 @@ const ROOM_DATA = {
     beds: '1 King Bed',
     baths: '1 Bathroom',
     feature: 'Hillside View',
-    gallery: [
-      'assets/images/room_04_img_1.jpg',
-      'assets/images/room_04_img_2.jpg',
-      'assets/images/room_04_img_3.jpg',
-      'assets/images/room_04_img_4.jpg',
-      'assets/images/room_04_img_5.jpg',
-      'assets/images/room_04_img_6.jpg'
-    ],
+    gallery: generateGallery('room_04', 17),
     desc: 'Modern serviced apartment located on an upper level, offering peaceful views towards Dealul Ciuperca. Equipped with premium linens, dishwasher, microwave, stove, and dedicated parking spot.'
   },
   room_05: {
@@ -89,14 +70,7 @@ const ROOM_DATA = {
     beds: '1 King Bed',
     baths: '1 Bathroom',
     feature: 'Dining Terrace',
-    gallery: [
-      'assets/images/room_05_img_1.jpg',
-      'assets/images/room_05_img_2.jpg',
-      'assets/images/room_05_img_3.jpg',
-      'assets/images/room_05_img_4.jpg',
-      'assets/images/room_05_img_5.jpg',
-      'assets/images/room_05_img_6.jpg'
-    ],
+    gallery: generateGallery('room_05', 22),
     desc: 'Deluxe apartment featuring an expanded outdoor terrace with outdoor dining furniture. Perfect for outdoor breakfasts and relaxed evening dining after exploring Oradeas historic center.'
   },
   room_06: {
@@ -108,14 +82,7 @@ const ROOM_DATA = {
     beds: '1 Double Bed',
     baths: '1 Bathroom',
     feature: 'Work Setup',
-    gallery: [
-      'assets/images/room_06_img_1.jpg',
-      'assets/images/room_06_img_2.jpg',
-      'assets/images/room_06_img_3.jpg',
-      'assets/images/room_06_img_4.jpg',
-      'assets/images/room_06_img_5.jpg',
-      'assets/images/room_06_img_6.jpg'
-    ],
+    gallery: generateGallery('room_06', 17),
     desc: 'Executive apartment designed for business travelers and long-term stays. Includes dedicated workspace, high-speed Wi-Fi, shared laundry room access with washer & dryer, and Nespresso machine.'
   },
   room_07: {
@@ -127,14 +94,7 @@ const ROOM_DATA = {
     beds: '1 King Bed',
     baths: '1 Bathroom',
     feature: 'Skyline Balcony',
-    gallery: [
-      'assets/images/room_07_img_1.jpg',
-      'assets/images/room_07_img_2.jpg',
-      'assets/images/room_07_img_3.jpg',
-      'assets/images/room_07_img_4.jpg',
-      'assets/images/room_07_img_5.jpg',
-      'assets/images/room_07_img_6.jpg'
-    ],
+    gallery: generateGallery('room_07', 23),
     desc: 'Flagship top-floor penthouse apartment offering elevated views over Oradea skyline and Dealul Ciuperca. Features spacious lounge, private balcony, full kitchen, and premium linens.'
   }
 };
@@ -199,7 +159,6 @@ function initWellnessSlideshow() {
 
   if (!wellnessImg || !dotsContainer) return;
 
-  // Build dots
   dotsContainer.innerHTML = '';
   WELLNESS_IMAGES.forEach((_, idx) => {
     const dot = document.createElement('div');
@@ -218,7 +177,6 @@ function initWellnessSlideshow() {
     setWellnessSlide(wellnessSlideIdx);
   });
 
-  // Auto-play slideshow every 5s
   wellnessTimer = setInterval(() => {
     wellnessSlideIdx = (wellnessSlideIdx + 1) % WELLNESS_IMAGES.length;
     setWellnessSlide(wellnessSlideIdx);
@@ -236,7 +194,7 @@ function setWellnessSlide(idx) {
   });
 }
 
-// 4. In-Site Multi-Photo Gallery Modal Controller
+// 4. In-Site Full Multi-Photo Gallery Modal Controller
 function openRoomModal(roomId) {
   const room = ROOM_DATA[roomId];
   if (!room) return;
@@ -256,7 +214,7 @@ function openRoomModal(roomId) {
   const reserveBtn = document.getElementById('modalDirectReserveBtn');
   reserveBtn.href = room.flatwhiteUrl;
 
-  // Render Full Gallery & Thumbnails
+  // Render Full Gallery & Thumbnails Strip
   renderModalGallery(room);
 
   // Show Modal Overlay
@@ -268,17 +226,25 @@ function openRoomModal(roomId) {
 function renderModalGallery(room) {
   const mainImg = document.getElementById('modalRoomImage');
   const thumbsContainer = document.getElementById('modalThumbsContainer');
+  const photoCounter = document.getElementById('modalPhotoCounter');
 
   mainImg.src = room.gallery[currentGalleryIdx];
-  thumbsContainer.innerHTML = '';
+  if (photoCounter) {
+    photoCounter.textContent = `${currentGalleryIdx + 1} / ${room.gallery.length}`;
+  }
 
+  thumbsContainer.innerHTML = '';
   room.gallery.forEach((imgUrl, idx) => {
     const thumb = document.createElement('img');
     thumb.src = imgUrl;
     thumb.className = `modal-thumb ${idx === currentGalleryIdx ? 'active' : ''}`;
+    thumb.title = `Photo ${idx + 1} of ${room.gallery.length}`;
     thumb.addEventListener('click', () => {
       currentGalleryIdx = idx;
       mainImg.src = room.gallery[currentGalleryIdx];
+      if (photoCounter) {
+        photoCounter.textContent = `${currentGalleryIdx + 1} / ${room.gallery.length}`;
+      }
       document.querySelectorAll('.modal-thumb').forEach((t, i) => {
         t.classList.toggle('active', i === currentGalleryIdx);
       });
