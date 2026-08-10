@@ -118,7 +118,7 @@
       <div class="section-header reveal-up">
         <span class="section-subtitle">Serviced Accommodations</span>
         <h2 class="section-title">The 7 Residences</h2>
-        <p class="section-description">Scroll down to explore each apartment. Click any residence to view real photos and complete your direct reservation.</p>
+        <p class="section-description">Select any apartment to inspect photos, details, and pick your reservation dates.</p>
       </div>
 
       <div class="room-showcase-list">
@@ -147,9 +147,9 @@
                 Private Terrace
               </div>
             </div>
-            <a href="https://rezervare.flatwhite.ro/listing/700074193" target="_blank" class="btn-redirect">
+            <button onclick="openRoomModal('room_01')" class="btn-trigger-modal">
               View & Reserve Room 01 &rarr;
-            </a>
+            </button>
           </div>
         </article>
 
@@ -177,9 +177,9 @@
                 Heated Floors
               </div>
             </div>
-            <a href="https://rezervare.flatwhite.ro/listing/700074200" target="_blank" class="btn-redirect">
+            <button onclick="openRoomModal('room_02')" class="btn-trigger-modal">
               View & Reserve Room 02 &rarr;
-            </a>
+            </button>
           </div>
         </article>
 
@@ -207,9 +207,9 @@
                 Courtyard View
               </div>
             </div>
-            <a href="https://rezervare.flatwhite.ro/listing/700074201" target="_blank" class="btn-redirect">
+            <button onclick="openRoomModal('room_03')" class="btn-trigger-modal">
               View & Reserve Room 03 &rarr;
-            </a>
+            </button>
           </div>
         </article>
 
@@ -237,9 +237,9 @@
                 Hillside View
               </div>
             </div>
-            <a href="https://rezervare.flatwhite.ro/listing/700074202" target="_blank" class="btn-redirect">
+            <button onclick="openRoomModal('room_04')" class="btn-trigger-modal">
               View & Reserve Room 04 &rarr;
-            </a>
+            </button>
           </div>
         </article>
 
@@ -267,9 +267,9 @@
                 Dining Terrace
               </div>
             </div>
-            <a href="https://rezervare.flatwhite.ro/listing/700074203" target="_blank" class="btn-redirect">
+            <button onclick="openRoomModal('room_05')" class="btn-trigger-modal">
               View & Reserve Room 05 &rarr;
-            </a>
+            </button>
           </div>
         </article>
 
@@ -297,9 +297,9 @@
                 Work Setup
               </div>
             </div>
-            <a href="https://rezervare.flatwhite.ro/listing/700074204" target="_blank" class="btn-redirect">
+            <button onclick="openRoomModal('room_06')" class="btn-trigger-modal">
               View & Reserve Room 06 &rarr;
-            </a>
+            </button>
           </div>
         </article>
 
@@ -327,9 +327,9 @@
                 Skyline Balcony
               </div>
             </div>
-            <a href="https://rezervare.flatwhite.ro/listing/700074205" target="_blank" class="btn-redirect">
+            <button onclick="openRoomModal('room_07')" class="btn-trigger-modal">
               View & Reserve Room 07 &rarr;
-            </a>
+            </button>
           </div>
         </article>
 
@@ -444,6 +444,73 @@
       </div>
     </div>
   </footer>
+
+  <!-- IN-SITE PRESENTATION & DIRECT CHECKOUT HIJACK MODAL CONTAINER -->
+  <div class="room-modal-overlay" id="roomModalOverlay">
+    <div class="room-modal-card">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+      
+      <div class="modal-grid">
+        <!-- Photo Gallery Side -->
+        <div class="modal-gallery-side">
+          <img src="" alt="Room Detail Photo" id="modalRoomImage">
+        </div>
+
+        <!-- Details & Direct Hijacked Booking Form Side -->
+        <div class="modal-info-side">
+          <div>
+            <span class="modal-header-badge" id="modalRoomSubtitle">Ground Floor</span>
+            <h3 class="modal-room-title" id="modalRoomTitle">Lite Residence 01</h3>
+            <p class="modal-room-desc" id="modalRoomDesc">Apartment description...</p>
+
+            <div class="modal-specs-pills">
+              <span class="modal-spec-pill">🛏️ <span id="modalSpecBeds">1 Double Bed</span></span>
+              <span class="modal-spec-pill">🚿 <span id="modalSpecBaths">1 Bathroom</span></span>
+              <span class="modal-spec-pill">✨ <span id="modalSpecFeature">Private Terrace</span></span>
+            </div>
+          </div>
+
+          <!-- Date Selector & Hijacked Direct Checkout Trigger -->
+          <div>
+            <div class="modal-booking-box">
+              <div class="modal-booking-title">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                Select Stay Dates & Guests
+              </div>
+
+              <div class="modal-dates-grid">
+                <div class="date-field">
+                  <label for="modalCheckinInput">Check-In</label>
+                  <input type="date" id="modalCheckinInput">
+                </div>
+                <div class="date-field">
+                  <label for="modalCheckoutInput">Check-Out</label>
+                  <input type="date" id="modalCheckoutInput">
+                </div>
+              </div>
+
+              <div class="date-field" style="margin-bottom: 14px;">
+                <label for="modalGuestsSelect">Guests</label>
+                <select id="modalGuestsSelect">
+                  <option value="1">1 Adult</option>
+                  <option value="2" selected>2 Adults</option>
+                </select>
+              </div>
+
+              <button class="btn-proceed-checkout" id="modalCheckoutBtn">
+                Proceed to Secure Checkout &rarr;
+              </button>
+            </div>
+
+            <a href="#" target="_blank" class="modal-floating-flatwhite" id="modalFloatingFlatwhite">
+              View original listing on FlatWhite Properties &nearr;
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- JavaScript -->
   <script src="app.js"></script>
