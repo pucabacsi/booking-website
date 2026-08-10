@@ -650,7 +650,7 @@ const LOCALIZED_POI_DATA = [
       en: 'The city’s iconic hilltop featuring terraced gardens, amphitheater paths, and Oradea’s best sunset viewpoint.',
       de: 'Der ikonische Aussichtshügel der Stadt mit Panoramaterrassen und dem schönsten Sonnenuntergang der Stadt.',
       es: 'La icónica colina de la ciudad con miradores panorámicos y el mejor atardecer de Oradea.',
-      fr: 'La colline iconique de la ville offrant des terrasses panoramiques et le plus beau coucher de soleil d'Oradea.',
+      fr: 'La colline iconique de la ville offrant des terrasses panoramiques et le plus beau coucher de soleil d\'Oradea.',
       it: 'La collina simbolo della città con terrazze panoramiche e la vista sul tramonto più bella di Oradea.',
       pt: 'A icónica colina da cidade com terraços panorâmicos e o melhor pôr do sol de Oradea.'
     },
@@ -670,7 +670,7 @@ const LOCALIZED_POI_DATA = [
       de: 'Exquisites Restaurant auf der Hügelspitze mit internationaler Küche und spektakulärer Panoramaterrasse.',
       es: 'Restaurante de alta cocina en la colina con gastronomía internacional y terraza panorámica sobre la ciudad.',
       fr: 'Restaurant haut de gamme sur la colline proposant une cuisine internationale et une terrasse suspendue.',
-      it: 'Ristorante d'eccellenza sulla collina con cucina internazionale e terrazza panoramica sospesa sulla città.',
+      it: 'Ristorante d\'eccellenza sulla collina con cucina internazionale e terrazza panoramica sospesa sulla città.',
       pt: 'Restaurante de alta cozinha no topo da colina com gastronomia internacional e terraço panorâmico.'
     },
     mapUrl: 'https://maps.google.com/?q=Restaurant+Ciuperca+Oradea'
@@ -727,7 +727,7 @@ const LOCALIZED_POI_DATA = [
       de: 'Elegantes Gastronomie-Erlebnis in botanischem Ambiente mit mediterranen Spezialitäten & Cocktails.',
       es: 'Elegante restaurante con temática botánica que sirve platos mediterráneos refinados y cócteles de autor.',
       fr: 'Expérience gastronomique élégante dans un cadre botanique raffiné, proposant des plats méditerranéens.',
-      it: 'Raffinata esperienza gastronomica in un ambiente botanico con piatti mediterranei e cocktail d'autore.',
+      it: 'Raffinata esperienza gastronomica in un ambiente botanico con piatti mediterranei e cocktail d\'autore.',
       pt: 'Experiência gastronómica elegante num ambiente botânico com pratos mediterrânicos e coquetéis.'
     },
     mapUrl: 'https://maps.google.com/?q=Botanic+by+Armonia+Oradea'
@@ -812,7 +812,7 @@ const LOCALIZED_POI_DATA = [
     id: 'poi_castle_oradea',
     catGroup: ['near', 'center'],
     catName: { ro: 'Cetate Istorică & Muzeu', hu: 'Történelmi Vár & Múzeum', en: 'Historic Fortress & Museum', de: 'Historische Festung & Museum', es: 'Fortaleza Histórica y Museo', fr: 'Forteresse Historique & Musée', it: 'Fortezza Storica & Museo', pt: 'Fortaleza Histórica & Museu' },
-    name: { ro: 'Cetatea Oradea (Castle of Oradea)', hu: 'Nagyváradi Vár (Cetatea Oradea)', en: 'Oradea Fortress (Castle of Oradea)', de: 'Festung Oradea (Burg)', es: 'Fortaleza de Oradea (Castillo)', fr: 'Forteresse d'Oradea (Château)', it: 'Fortezza di Oradea (Castello)', pt: 'Fortaleza de Oradea (Castelo)' },
+    name: { ro: 'Cetatea Oradea (Castle of Oradea)', hu: 'Nagyváradi Vár (Cetatea Oradea)', en: 'Oradea Fortress (Castle of Oradea)', de: 'Festung Oradea (Burg)', es: 'Fortaleza de Oradea (Castillo)', fr: 'Forteresse d\'Oradea (Château)', it: 'Fortezza di Oradea (Castello)', pt: 'Fortaleza de Oradea (Castelo)' },
     distance: '780 m',
     travelMode: { ro: '🚶 11 min mers pe jos', hu: '🚶 11 perc séta', en: '🚶 11 min walk', de: '🚶 11 Min. zu Fuß', es: '🚶 11 min a pie', fr: '🚶 11 min à pied', it: '🚶 11 min a piedi', pt: '🚶 11 min a pé' },
     desc: {
@@ -821,7 +821,7 @@ const LOCALIZED_POI_DATA = [
       en: 'Monumental 11th-century pentagonal star fortress housing the Oradea City Museum, artisan shops, and summer festivals.',
       de: 'Monumentale Fünfeck-Sternfestung aus dem 11. Jahrhundert mit Stadtmuseum, Handwerkerhöfen und Events.',
       es: 'Monumental fortaleza pentagonal en estrella que alberga el Museo de la Ciudad y talleres artesanales.',
-      fr: 'Forteresse pentagonale en étoile du XIe siècle abritant le musée de la ville et des ateliers d'artisans.',
+      fr: 'Forteresse pentagonale en étoile du XIe siècle abritant le musée de la ville et des ateliers d\'artisans.',
       it: 'Monumentale fortezza pentagonale a stella ospitante il Museo della Città e botteghe artigiane.',
       pt: 'Monumental fortaleza pentagonal em estrela que abriga o Museu da Cidade e oficinas artesanais.'
     },
@@ -831,7 +831,7 @@ const LOCALIZED_POI_DATA = [
     id: 'poi_piata_unirii',
     catGroup: ['center'],
     catName: { ro: 'Centrul Istoric', hu: 'Történelmi Belváros', en: 'Historic City Center', de: 'Historisches Zentrum', es: 'Centro Histórico', fr: 'Centre Historique', it: 'Centro Storico', pt: 'Centro Histórico' },
-    name: { ro: 'Piața Unirii & Palatul Vulturul Negru', hu: 'Szent László Tér & Fekete Sas Palota', en: 'Union Square & Black Eagle Palace', de: 'Piața Unirii & Palast Schwarzer Adler', es: 'Plaza de la Unión y Palacio Águila Negra', fr: 'Place de l'Union & Palais de l'Aigle Noir', it: 'Piazza Unirii & Palazzo Aquila Nera', pt: 'Praça da União & Palácio Águia Negra' },
+    name: { ro: 'Piața Unirii & Palatul Vulturul Negru', hu: 'Szent László Tér & Fekete Sas Palota', en: 'Union Square & Black Eagle Palace', de: 'Piața Unirii & Palast Schwarzer Adler', es: 'Plaza de la Unión y Palacio Águila Negra', fr: 'Place de l\'Union & Palais de l\'Aigle Noir', it: 'Piazza Unirii & Palazzo Aquila Nera', pt: 'Praça da União & Palácio Águia Negra' },
     distance: '1.6 km',
     travelMode: { ro: '🚗 5 min auto / 🚋 Tram 1,3', hu: '🚗 5 perc autó / 🚋 Villamos', en: '🚗 5 min drive / 🚋 Tram line 1,3', de: '🚗 5 Min. / 🚋 Straßenbahn', es: '🚗 5 min coche / 🚋 Tranvía', fr: '🚗 5 min / 🚋 Tramway', it: '🚗 5 min / 🚋 Tram', pt: '🚗 5 min / 🚋 Elétrico' },
     desc: {
@@ -840,8 +840,8 @@ const LOCALIZED_POI_DATA = [
       en: 'Oradea’s breathtaking Art Nouveau square featuring the glass-covered Black Eagle Passage, City Hall Tower & Moon Church.',
       de: 'Oradeas atemberaubender Art-Nouveau-Platz mit der gläsernen Passage Schwarzer Adler und Rathausturm.',
       es: 'El impresionante centro Art Nouveau de Oradea con el pasaje de cristal Águila Negra y la Torre del Ayuntamiento.',
-      fr: 'Le cœur Art nouveau d'Oradea avec le passage en verre de l'Aigle Noir et la tour de l'hôtel de ville.',
-      it: 'Il cuore Art Nouveau di Oradea con lo spettacolare passaggio in vetro dell'Aquila Nera e la Torre del Comune.',
+      fr: 'Le cœur Art nouveau d\'Oradea avec le passage en verre de l\'Aigle Noir et la tour de l\'hôtel de ville.',
+      it: 'Il cuore Art Nouveau di Oradea con lo spettacolare passaggio in vetro dell\'Aquila Nera e la Torre del Comune.',
       pt: 'O coração Art Nouveau de Oradea com a passagem em vidro Águia Negra e a Torre da Câmara.'
     },
     mapUrl: 'https://maps.google.com/?q=Piata+Unirii+Oradea'
