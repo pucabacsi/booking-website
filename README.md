@@ -1,18 +1,20 @@
-# Aura Stays - Luxury Vacation Rentals & Booking Hub
+# Lite Residence Oradea — Luxury Serviced Aparthotel
 
-A modern, high-end presentation and direct reservation website designed for luxury vacation rentals, villas, and apartments.
+A modern, high-end presentation and direct reservation website designed for **Lite Residence Oradea**, featuring 7 luxury serviced hotel-style apartments located at Dealul Ciuperca (Strada Olteniei 64, Oradea, Bihor County, Romania).
 
-Fully optimized for deployment on **Cyberfolks (Romania) `cyber_UP!`** hosting with automated **2-Way iCal Synchronization** for **Airbnb** and **Booking.com**.
+Managed by **Flat White Properties** (*transitioning to independent direct hosting*).
 
 ---
 
 ## 🌟 Key Features
 
-- **Multi-Channel iCal 2-Way Sync**: Automatically synchronizes availability between Airbnb, Booking.com, and local website direct bookings to prevent double-bookings.
-- **Interactive Multi-Channel Availability Calendar**: Unified visual grid displaying date availability color-coded by channel.
-- **Direct VIP Booking Inquiry Modal**: Direct reservation workflow enabling guests to book without third-party commission fees.
-- **High-Impact Glassmorphic Design**: Responsive, mobile-first design with smooth transitions and curated luxury visual assets.
-- **LiteSpeed & cPanel Ready**: Includes `ical-sync.php` background script optimized for Cyberfolks cPanel Cron Jobs.
+- **7 Serviced Residences (01–07)**: Full showcase of all 7 luxury apartments with individual specs (Double/Queen/King beds, private terraces, heated floors, hillside views, executive work setups, penthouse skyline views).
+- **In-Site Multi-Photo Gallery Modal**: Interactive 2-column modal with zero native scrollbars, smooth thumbnail auto-centering, mouse wheel scrolling, drag-to-scroll panning, and photo counter badge (`1 / N`).
+- **Clean Room Galleries**: 100% filtered room galleries showcasing only private indoor apartment spaces (master bedroom, kitchen, bathroom, living room, private balcony). All shared Jacuzzi & Sauna photos are cleanly separated into the Wellness section.
+- **Interactive Wellness & Amenities Slideshow**: Dedicated slideshow featuring the private courtyard Jacuzzi hot tub, wooden sauna, and outdoor relaxation areas.
+- **Direct FlatWhite Properties Redirect**: High-converting CTA buttons redirecting guests seamlessly to each residence's official FlatWhite booking page.
+- **Location & Information**: House policies, check-in timings (from 16:00 keyless self check-in, check-out until 11:00), 1 private courtyard parking spot per room, quiet hours (21:00–08:00), starter pack details, and embedded interactive map.
+- **Bright Scandinavian Aesthetic**: High-contrast LITE theme with warm gold accents, glassmorphic blurred navbar, smooth entrance animations, and responsive layout.
 
 ---
 
@@ -20,42 +22,40 @@ Fully optimized for deployment on **Cyberfolks (Romania) `cyber_UP!`** hosting w
 
 ```
 booking-website/
-├── index.html            # Main presentation markup & SEO metadata
-├── style.css             # Glassmorphic luxury styling system
-├── app.js                # Calendar engine & interactive modal scripts
-├── ical-sync.php         # Cyberfolks cPanel background iCal sync script
+├── index.html            # Main markup, SEO metadata & modal overlays
+├── style.css             # LITE bright Scandinavian design system & modal styling
+├── app.js                # Room database, gallery modal engine & wellness slideshow logic
+├── scratch_inspector.html # Full visual image inspector tool for all 7 residences
 └── assets/
-    └── images/           # High-resolution property & hero visual assets
-        ├── hero_bg.png
-        ├── seaside_villa.png
-        ├── alpine_chalet.png
-        └── city_penthouse.png
+    └── images/           # High-resolution real photos labeled by room (room_01_img_1 to room_07_img_23)
 ```
 
 ---
 
-## 🚀 Cyberfolks (`cyber_UP!`) Deployment Guide
+## 💻 Local Development & Testing
 
-1. **Upload Files**: Upload the contents of this repository to your `public_html` directory via cPanel File Manager or FTP.
-2. **Setup iCal Background Cron Job**:
-   In Cyberfolks cPanel -> **Cron Jobs**, add a job to run every 15 minutes:
-   ```bash
-   /usr/local/bin/php /home/YOUR_USERNAME/public_html/ical-sync.php >/dev/null 2>&1
-   ```
-3. **Configure iCal Feed URLs**:
-   Open `ical-sync.php` and replace the placeholder URLs with your official Airbnb and Booking.com `.ics` export links.
-
----
-
-## 💻 Local Preview
-
-You can test the site locally using any HTTP server:
+Run a local HTTP web server using Python:
 
 ```bash
-# Using Python
-python -m http.server 8080
-
-# Or using Node.js npx
-npx http-server -p 8080
+python -m http.server 8088
 ```
-Then open `http://localhost:8080` in your browser.
+
+Then open `http://localhost:8088` in your browser.
+
+To launch the visual image inspector tool, navigate to `http://localhost:8088/scratch_inspector.html`.
+
+---
+
+## 🚀 Deployment (Cyberfolks NVMe Hosting)
+
+1. Upload all files (`index.html`, `style.css`, `app.js`, `assets/`) to `public_html` via cPanel File Manager or FTP.
+2. Ensure permissions are set to `0644` for files and `0755` for directories.
+3. Test SSL and HTTPS routing.
+
+---
+
+## 👨‍💻 Credits
+
+- **Designed & Developed By**: **Szabadhegyi Laszlo**
+- **Location**: Strada Olteniei 64, Oradea, Bihor County, Romania
+- **Managed By**: Flat White Properties (`reservations@flatwhite.ro` | `+40.770.146.298`)
