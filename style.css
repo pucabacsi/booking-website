@@ -162,6 +162,7 @@ button {
   display: flex;
   flex-direction: column;
   line-height: 1;
+  white-space: nowrap;
 }
 
 .brand-name {
@@ -188,7 +189,7 @@ button {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 22px;
   list-style: none;
 }
 
@@ -198,6 +199,7 @@ button {
   color: var(--text-muted);
   transition: color var(--transition-fast);
   position: relative;
+  white-space: nowrap;
 }
 
 .nav-link::after {
@@ -346,6 +348,7 @@ button {
   gap: 10px;
   box-shadow: 0 8px 24px rgba(197, 155, 39, 0.25);
   transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  white-space: nowrap;
 }
 
 .btn-gold:hover {
