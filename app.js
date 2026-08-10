@@ -64,6 +64,15 @@ const LANG_CONFIG = {
 const TRANSLATIONS = {
 
   hu: {
+    nav_poi: 'Látnivalók & POI',
+    poi_subtitle: 'Helyi Útmutató & Látnivalók',
+    poi_title: 'Látnivalók a Rezidencia Közelében',
+    poi_desc: 'Fedezze fel Nagyvárad legszebb látnivalóit, éttermeit, parkjait és kávézóit, pontos távolságokkal a Lite Residence (Strada Olteniei 64) épületétől.',
+    poi_filter_all: 'Összes Látnivaló',
+    poi_filter_near: 'A Közelben (< 1 km)',
+    poi_filter_dining: 'Éttermek & Kávézók',
+    poi_filter_center: 'Történelmi Központ & Spa',
+    poi_map_link_text: 'Útvonal a Térképen',
     doc_title: 'Lite Residence Oradea | Luxus Apartmanhotel a Ciuperca-dombnál',
     nav_overview: 'Áttekintés',
     nav_wellness: 'Wellness & Szolgáltatások',
@@ -125,6 +134,15 @@ const TRANSLATIONS = {
     modal_reserve_btn: 'Foglalás a FlatWhite Properties-en'
   },
   ro: {
+    nav_poi: 'Atracții & POI',
+    poi_subtitle: 'Ghid Local & Atracții Turistice',
+    poi_title: 'Puncte de Interes Lângă Reședință',
+    poi_desc: 'Descoperă cele mai frumoase atracții, restaurante gourmet, parcuri și cafenele din Oradea, calculate cu distanța exactă de la Lite Residence (Strada Olteniei 64).',
+    poi_filter_all: 'Toate Atracțiile',
+    poi_filter_near: 'În Apropiere (< 1 km)',
+    poi_filter_dining: 'Restaurante & Cafenele',
+    poi_filter_center: 'Centrul Istoric & Spa',
+    poi_map_link_text: 'Navighează pe Hărți',
     doc_title: 'Lite Residence Oradea | Apartamente în Regim Hotelier la Dealul Ciuperca',
     nav_overview: 'Prezentare Generală',
     nav_wellness: 'Wellness & Facilități',
@@ -187,6 +205,15 @@ const TRANSLATIONS = {
   },
   
   en: {
+    nav_poi: 'Attractions & POIs',
+    poi_subtitle: 'Local Guide & Tourist Sights',
+    poi_title: 'Points of Interest Near Residence',
+    poi_desc: 'Explore top attractions, gourmet restaurants, parks, and specialty coffee shops in Oradea, measured directly from Lite Residence (Strada Olteniei 64).',
+    poi_filter_all: 'All Attractions',
+    poi_filter_near: 'Nearby (< 1 km)',
+    poi_filter_dining: 'Dining & Cafes',
+    poi_filter_center: 'City Center & Spa',
+    poi_map_link_text: 'Navigate on Maps',
     doc_title: 'Lite Residence Oradea | Luxury Serviced Aparthotel at Dealul Ciuperca',
     nav_overview: 'Overview',
     nav_wellness: 'Wellness & Amenities',
@@ -249,6 +276,15 @@ const TRANSLATIONS = {
   },
   
   de: {
+    nav_poi: 'Sehenswürdigkeiten',
+    poi_subtitle: 'Lokaler Reiseführer & Highlights',
+    poi_title: 'Sehenswürdigkeiten in der Nähe',
+    poi_desc: 'Entdecken Sie die besten Attraktionen, Restaurants, Parks und Cafés in Oradea mit genauen Entfernungsangaben ab der Lite Residence.',
+    poi_filter_all: 'Alle Highlights',
+    poi_filter_near: 'In der Nähe (< 1 km)',
+    poi_filter_dining: 'Gastronomie & Cafés',
+    poi_filter_center: 'Zentrum & Wellness',
+    poi_map_link_text: 'Route Auf Karte Öffnen',
     doc_title: 'Lite Residence Oradea | Luxus Serviced Aparthotel am Dealul Ciuperca',
     nav_overview: 'Übersicht',
     nav_wellness: 'Wellness & Ausstattung',
@@ -311,6 +347,15 @@ const TRANSLATIONS = {
   },
   
   es: {
+    nav_poi: 'Atracciones y Puntos de Interés',
+    poi_subtitle: 'Guía Local y Puntos de Interés',
+    poi_title: 'Lugares de Interés Cercanos',
+    poi_desc: 'Descubra los mejores lugares turísticos, restaurantes gourmet, parques y cafeterías de Oradea con distancia exacta desde la residencia.',
+    poi_filter_all: 'Todas las Atracciones',
+    poi_filter_near: 'En las Cercanías (< 1 km)',
+    poi_filter_dining: 'Restaurantes y Cafés',
+    poi_filter_center: 'Centro Histórico y Spa',
+    poi_map_link_text: 'Ver en Google Maps',
     doc_title: 'Lite Residence Oradea | Apartahotel de Lujo en Dealul Ciuperca',
     nav_overview: 'Visión General',
     nav_wellness: 'Wellness & Servicios',
@@ -373,6 +418,15 @@ const TRANSLATIONS = {
   },
   
   fr: {
+    nav_poi: 'Attractions & POI',
+    poi_subtitle: 'Guide Local & Lieux d\'Intérêt',
+    poi_title: 'Points d\'Intérêt à Proximité',
+    poi_desc: 'Découvrez les meilleures attractions, restaurants gastronomiques, parcs et cafés d\'Oradea calculés depuis la Lite Residence.',
+    poi_filter_all: 'Toutes les Attractions',
+    poi_filter_near: 'À Proximité (< 1 km)',
+    poi_filter_dining: 'Restaurants & Cafés',
+    poi_filter_center: 'Centre Historique & Spa',
+    poi_map_link_text: 'Itinéraire sur la Carte',
     doc_title: 'Lite Residence Oradea | Appart-hôtel de Luxe à Dealul Ciuperca',
     nav_overview: 'Aperçu',
     nav_wellness: 'Bien-être & Équipements',
@@ -435,6 +489,15 @@ const TRANSLATIONS = {
   },
   
   it: {
+    nav_poi: 'Attrazioni & POI',
+    poi_subtitle: 'Guida Locale & Punti d\'Interesse',
+    poi_title: 'Luoghi d\'Interesse Vicini',
+    poi_desc: 'Scopri le migliori attrazioni, ristoranti gourmet, parchi e caffè a Oradea calcolati direttamente da Lite Residence.',
+    poi_filter_all: 'Tutte le Attrazioni',
+    poi_filter_near: 'Nelle Vicinanze (< 1 km)',
+    poi_filter_dining: 'Ristoranti & Caffè',
+    poi_filter_center: 'Centro Storico & Spa',
+    poi_map_link_text: 'Indicazioni Mappa',
     doc_title: 'Lite Residence Oradea | Aparthotel di Lusso a Dealul Ciuperca',
     nav_overview: 'Panoramica',
     nav_wellness: 'Wellness & Servizi',
@@ -497,6 +560,15 @@ const TRANSLATIONS = {
   },
   
   pt: {
+    nav_poi: 'Atrações & POIs',
+    poi_subtitle: 'Guia Local & Pontos de Interesse',
+    poi_title: 'Pontos de Interesse Próximos',
+    poi_desc: 'Descubra as principais atrações, restaurantes gourmet, parques e cafés em Oradea com distâncias calculadas a partir da residência.',
+    poi_filter_all: 'Todas as Atrações',
+    poi_filter_near: 'Nas Proximidades (< 1 km)',
+    poi_filter_dining: 'Restaurantes & Cafés',
+    poi_filter_center: 'Centro Histórico & Spa',
+    poi_map_link_text: 'Navegar no Mapa',
     doc_title: 'Lite Residence Oradea | Aparthotel de Luxo em Dealul Ciuperca',
     nav_overview: 'Visão Geral',
     nav_wellness: 'Wellness & Comodidades',
@@ -560,6 +632,241 @@ const TRANSLATIONS = {
 };
 
 // Localized Room Definitions for All 7 Languages
+
+// ==========================================================================
+// LOCALIZED POINTS OF INTEREST DATA (Calculated from 47.057771, 21.947079)
+// ==========================================================================
+const LOCALIZED_POI_DATA = [
+  {
+    id: 'poi_ciuperca_park',
+    catGroup: ['near'],
+    catName: { ro: 'Parc & Belvedere', hu: 'Park & Kilátó', en: 'Park & Viewpoint', de: 'Park & Aussichtspunkt', es: 'Parque y Mirador', fr: 'Parc & Belvédère', it: 'Parco & Belvedere', pt: 'Parque & Miradouro' },
+    name: { ro: 'Dealul Ciuperca (Parc & Belvedere)', hu: 'Ciuperca-domb (Park & Kilátó)', en: 'Ciuperca Hill Park & Viewpoint', de: 'Dealul Ciuperca Park', es: 'Parque y Mirador Ciuperca', fr: 'Parc et Belvédère Ciuperca', it: 'Parco e Belvedere Ciuperca', pt: 'Parque e Miradouro Ciuperca' },
+    distance: '220 m',
+    travelMode: { ro: '🚶 4 min mers pe jos', hu: '🚶 4 perc séta', en: '🚶 4 min walk', de: '🚶 4 Min. zu Fuß', es: '🚶 4 min a pie', fr: '🚶 4 min à pied', it: '🚶 4 min a piedi', pt: '🚶 4 min a pé' },
+    desc: {
+      ro: 'Dealul simbolic al orașului, cu terase panoramice spectaculoase, alei amenajate și cel mai frumos apus din Oradea.',
+      hu: 'Nagyvárad ikonikus dombja panorámás teraszokkal, sétányokkal és a város legszebb naplementéjével.',
+      en: 'The city’s iconic hilltop featuring terraced gardens, amphitheater paths, and Oradea’s best sunset viewpoint.',
+      de: 'Der ikonische Aussichtshügel der Stadt mit Panoramaterrassen und dem schönsten Sonnenuntergang der Stadt.',
+      es: 'La icónica colina de la ciudad con miradores panorámicos y el mejor atardecer de Oradea.',
+      fr: 'La colline iconique de la ville offrant des terrasses panoramiques et le plus beau coucher de soleil d'Oradea.',
+      it: 'La collina simbolo della città con terrazze panoramiche e la vista sul tramonto più bella di Oradea.',
+      pt: 'A icónica colina da cidade com terraços panorâmicos e o melhor pôr do sol de Oradea.'
+    },
+    mapUrl: 'https://maps.google.com/?q=Dealul+Ciuperca+Oradea'
+  },
+  {
+    id: 'poi_ciuperca_restaurant',
+    catGroup: ['near', 'dining'],
+    catName: { ro: 'Restaurant Fine Dining', hu: 'Fine Dining Étterem', en: 'Fine Dining Restaurant', de: 'Fine Dining Restaurant', es: 'Restaurante Elegante', fr: 'Restaurant Gastronomique', it: 'Ristorante Raffinato', pt: 'Restaurante Elegante' },
+    name: { ro: 'Restaurant Ciuperca', hu: 'Ciuperca Étterem', en: 'Ciuperca Restaurant', de: 'Restaurant Ciuperca', es: 'Restaurante Ciuperca', fr: 'Restaurant Ciuperca', it: 'Ristorante Ciuperca', pt: 'Restaurante Ciuperca' },
+    distance: '220 m',
+    travelMode: { ro: '🚶 4 min mers pe jos', hu: '🚶 4 perc séta', en: '🚶 4 min walk', de: '🚶 4 Min. zu Fuß', es: '🚶 4 min a pie', fr: '🚶 4 min à pied', it: '🚶 4 min a piedi', pt: '🚶 4 min a pé' },
+    desc: {
+      ro: 'Restaurant de top situat pe culmea dealului, oferind preparate din bucătăria internațională și o terasă suspendată peste oraș.',
+      hu: 'Prémium étterem a dombtetőn, nemzetközi ételekkel és a város fölé nyúló terasszal.',
+      en: 'Top-tier hilltop dining offering international cuisine and a suspended panoramic terrace over the city.',
+      de: 'Exquisites Restaurant auf der Hügelspitze mit internationaler Küche und spektakulärer Panoramaterrasse.',
+      es: 'Restaurante de alta cocina en la colina con gastronomía internacional y terraza panorámica sobre la ciudad.',
+      fr: 'Restaurant haut de gamme sur la colline proposant une cuisine internationale et une terrasse suspendue.',
+      it: 'Ristorante d'eccellenza sulla collina con cucina internazionale e terrazza panoramica sospesa sulla città.',
+      pt: 'Restaurante de alta cozinha no topo da colina com gastronomia internacional e terraço panorâmico.'
+    },
+    mapUrl: 'https://maps.google.com/?q=Restaurant+Ciuperca+Oradea'
+  },
+  {
+    id: 'poi_snoozz',
+    catGroup: ['near', 'dining'],
+    catName: { ro: 'Specialty Coffee', hu: 'Specialty Kávézó', en: 'Specialty Coffee Shop', de: 'Specialty Kaffeebar', es: 'Café de Especialidad', fr: 'Café de Spécialité', it: 'Caffetteria Specializzata', pt: 'Café de Especialidade' },
+    name: { ro: 'Snoozz Specialty Coffee', hu: 'Snoozz Specialty Coffee', en: 'Snoozz Specialty Coffee', de: 'Snoozz Specialty Coffee', es: 'Snoozz Specialty Coffee', fr: 'Snoozz Specialty Coffee', it: 'Snoozz Specialty Coffee', pt: 'Snoozz Specialty Coffee' },
+    distance: '400 m',
+    travelMode: { ro: '🚶 6 min mers pe jos', hu: '🚶 6 perc séta', en: '🚶 6 min walk', de: '🚶 6 Min. zu Fuß', es: '🚶 6 min a pie', fr: '🚶 6 min à pied', it: '🚶 6 min a piedi', pt: '🚶 6 min a pé' },
+    desc: {
+      ro: 'Cafenea de specialitate renumită pentru cafeaua proaspăt prăjită, micul dejun delicios, brunch și atmosferă relaxantă.',
+      hu: 'Népszerű specialty kávézó frissen pörkölt kávéval, finom reggelivel, brunch-csal és kellemes hangulattal.',
+      en: 'Top-rated specialty coffee hub famous for single-origin brews, fresh breakfast, brunch treats, and cozy vibes.',
+      de: 'Erstklassiges Specialty-Café bekannt für frisch gerösteten Kaffee, fantastischen Brunch und gemütliches Ambiente.',
+      es: 'Cafetería de especialidad famosa por su café recién tostado, desayunos gourmet, brunch y ambiente acogedor.',
+      fr: 'Café de spécialité réputé pour son café fraîchement torréfié, ses petits-déjeuners gourmands et son brunch.',
+      it: 'Caffetteria di specialità famosa per il caffè di singola origine, le colazioni fresche e il delizioso brunch.',
+      pt: 'Café de especialidade famoso pelo café torrado na hora, pequenos-almoços saborosos e brunch.'
+    },
+    mapUrl: 'https://maps.google.com/?q=Snoozz+Specialty+Coffee+Oradea'
+  },
+  {
+    id: 'poi_bratianu_park',
+    catGroup: ['near'],
+    catName: { ro: 'Parc & Promenadă', hu: 'Park & Sétány', en: 'Park & Promenade', de: 'Park & Promenade', es: 'Parque y Paseo', fr: 'Parc & Promenade', it: 'Parco & Passeggiata', pt: 'Parque & Passeio' },
+    name: { ro: 'Parcul Ion Brătianu', hu: 'Brătianu Park', en: 'Ion Brătianu Park', de: 'Ion Brătianu Park', es: 'Parque Ion Brătianu', fr: 'Parc Ion Brătianu', it: 'Parco Ion Brătianu', pt: 'Parque Ion Brătianu' },
+    distance: '410 m',
+    travelMode: { ro: '🚶 6 min mers pe jos', hu: '🚶 6 perc séta', en: '🚶 6 min walk', de: '🚶 6 Min. zu Fuß', es: '🚶 6 min a pie', fr: '🚶 6 min à pied', it: '🚶 6 min a piedi', pt: '🚶 6 min a pé' },
+    desc: {
+      ro: 'Parc verde liniștit pe malul Crișului Repede, cu terenuri de sport, alei umbroase, spații de relaxare și locuri de joacă.',
+      hu: 'Csendes zöld park a Sebes-Körös partján, sportpályákkal, árnyas sétányokkal és pihenőhelyekkel.',
+      en: 'Serene green park along Crișul Repede river featuring sports courts, tree-shaded walking paths, and picnic areas.',
+      de: 'Ruhiger grüner Park am Flussufer mit Sportplätzen, schattigen Spazierwegen und Erholungsbereichen.',
+      es: 'Tranquilo parque verde a orillas del río con pistas deportivas, paseos arbolados y zonas de descanso.',
+      fr: 'Parc verdoyant paisible au bord de la rivière avec terrains de sport, allées ombragées et espaces détente.',
+      it: 'Parco verde lungo il fiume con campi sportivi, viali ombreggiati e zone di relax.',
+      pt: 'Parque verde tranquilo à beira do rio com campos de desporto, passeios sombreados e áreas de descanso.'
+    },
+    mapUrl: 'https://maps.google.com/?q=Parcul+Ion+Bratianu+Oradea'
+  },
+  {
+    id: 'poi_botanic',
+    catGroup: ['near', 'dining'],
+    catName: { ro: 'Restaurant Gourmet', hu: 'Gourmet Étterem', en: 'Gourmet Restaurant', de: 'Gourmet Restaurant', es: 'Restaurante Gourmet', fr: 'Restaurant Gourmet', it: 'Ristorante Gourmet', pt: 'Restaurante Gourmet' },
+    name: { ro: 'Botanic by Armonia', hu: 'Botanic by Armonia', en: 'Botanic by Armonia', de: 'Botanic by Armonia', es: 'Botanic by Armonia', fr: 'Botanic by Armonia', it: 'Botanic by Armonia', pt: 'Botanic by Armonia' },
+    distance: '425 m',
+    travelMode: { ro: '🚶 6 min mers pe jos', hu: '🚶 6 perc séta', en: '🚶 6 min walk', de: '🚶 6 Min. zu Fuß', es: '🚶 6 min a pie', fr: '🚶 6 min à pied', it: '🚶 6 min a piedi', pt: '🚶 6 min a pé' },
+    desc: {
+      ro: 'Experience gastronomică elegantă într-un decor botanical rafinat, cu preparate mediteraneene și cocktailuri de autor.',
+      en: 'Elegant dining experience in a lush botanical-themed venue, serving refined Mediterranean dishes & craft cocktails.',
+      hu: 'Elegáns gasztronómiai élmény növényi dekorációval, mediterrán ételekkel és kézműves koktélokkal.',
+      de: 'Elegantes Gastronomie-Erlebnis in botanischem Ambiente mit mediterranen Spezialitäten & Cocktails.',
+      es: 'Elegante restaurante con temática botánica que sirve platos mediterráneos refinados y cócteles de autor.',
+      fr: 'Expérience gastronomique élégante dans un cadre botanique raffiné, proposant des plats méditerranéens.',
+      it: 'Raffinata esperienza gastronomica in un ambiente botanico con piatti mediterranei e cocktail d'autore.',
+      pt: 'Experiência gastronómica elegante num ambiente botânico com pratos mediterrânicos e coquetéis.'
+    },
+    mapUrl: 'https://maps.google.com/?q=Botanic+by+Armonia+Oradea'
+  },
+  {
+    id: 'poi_crinul_alb',
+    catGroup: ['near', 'dining'],
+    catName: { ro: 'Restaurant pe Faleză', hu: 'Vízparti Étterem', en: 'Riverfront Dining', de: 'Flussufer-Restaurant', es: 'Restaurante Frente al Río', fr: 'Restaurant en Bord de Rivière', it: 'Ristorante Lungofiume', pt: 'Restaurante à Beira-Rio' },
+    name: { ro: 'Restaurant Crinul Alb', hu: 'Crinul Alb Étterem', en: 'Crinul Alb Restaurant', de: 'Restaurant Crinul Alb', es: 'Restaurante Crinul Alb', fr: 'Restaurant Crinul Alb', it: 'Ristorante Crinul Alb', pt: 'Restaurante Crinul Alb' },
+    distance: '475 m',
+    travelMode: { ro: '🚶 7 min mers pe jos', hu: '🚶 7 perc séta', en: '🚶 7 min walk', de: '🚶 7 Min. zu Fuß', es: '🚶 7 min a pie', fr: '🚶 7 min à pied', it: '🚶 7 min a piedi', pt: '🚶 7 min a pé' },
+    desc: {
+      ro: 'Restaurant tradițional și internațional îndrăgit, amplasat pe faleza râului Crișul Repede cu terasă superbă pe apă.',
+      hu: 'Népszerű hagyományos és nemzetközi étterem a Sebes-Körös partján, gyönyörű vízparti terasszal.',
+      en: 'Beloved traditional & international restaurant situated directly on Crișul Repede promenade with river views.',
+      de: 'Beliebtes Restaurant am Flussufer des Crișul Repede mit schöner Terrasse und Flussblick.',
+      es: 'Restaurante tradicional e internacional ubicado en el paseo del río con hermosas vistas al agua.',
+      fr: 'Restaurant populaire en bord de rivière proposant des spécialités traditionnelles et internationales.',
+      it: 'Ristorante tradizionale e internazionale affacciato sul fiume con splendida terrazza vista acqua.',
+      pt: 'Restaurante tradicional e internacional situado no passeio marítimo com vista para o rio.'
+    },
+    mapUrl: 'https://maps.google.com/?q=Restaurant+Crinul+Alb+Oradea'
+  },
+  {
+    id: 'poi_rivo',
+    catGroup: ['near', 'dining'],
+    catName: { ro: 'Restaurant & Lounge', hu: 'Étterem & Lounge', en: 'Restaurant & Lounge', de: 'Restaurant & Lounge', es: 'Restaurante y Lounge', fr: 'Restaurant & Lounge', it: 'Ristorante & Lounge', pt: 'Restaurante & Lounge' },
+    name: { ro: 'RIVO Restaurant & Lounge', hu: 'RIVO Restaurant & Lounge', en: 'RIVO Restaurant & Lounge', de: 'RIVO Restaurant & Lounge', es: 'RIVO Restaurant & Lounge', fr: 'RIVO Restaurant & Lounge', it: 'RIVO Restaurant & Lounge', pt: 'RIVO Restaurant & Lounge' },
+    distance: '550 m',
+    travelMode: { ro: '🚶 8 min mers pe jos', hu: '🚶 8 perc séta', en: '🚶 8 min walk', de: '🚶 8 Min. zu Fuß', es: '🚶 8 min a pie', fr: '🚶 8 min à pied', it: '🚶 8 min a piedi', pt: '🚶 8 min a pé' },
+    desc: {
+      ro: 'Restaurant exclusivist pe malul apei cu bucătărie fusion gourmet, steakhouse, sushi bar și terasă chic pe malul râului.',
+      hu: 'Exkluzív vízparti étterem fúziós gourmet ételekkel, steakhouse-szal, sushi bárral és elegáns terasszal.',
+      en: 'Exclusive waterfront venue featuring gourmet fusion cuisine, steakhouse cuts, sushi bar, and chic riverfront lounge.',
+      de: 'Exklusives Restaurant am Flussufer mit Gourmet-Fusion-Küche, Steakhouse, Sushibar und stilvoller Lounge.',
+      es: 'Exclusivo local frente al río con cocina de fusión gourmet, carnes a la parrilla, sushi bar y elegante lounge.',
+      fr: 'Établissement exclusif en bord de rivière avec cuisine fusion gourmande, steakhouse, bar à sushi et lounge.',
+      it: 'Esclusivo locale lungofiume con cucina gourmet fusion, steakhouse, sushi bar ed elegante lounge.',
+      pt: 'Local exclusivo à beira-rio com cozinha fusão gourmet, steakhouse, bar de sushi e lounge chique.'
+    },
+    mapUrl: 'https://maps.google.com/?q=RIVO+Restaurant+Lounge+Oradea'
+  },
+  {
+    id: 'poi_petofi_crisul',
+    catGroup: ['near'],
+    catName: { ro: 'Parc & Shopping', hu: 'Park & Vásárlás', en: 'Park & Shopping Center', de: 'Park & Einkaufszentrum', es: 'Parque y Compras', fr: 'Parc & Shopping', it: 'Parco & Shopping', pt: 'Parque & Compras' },
+    name: { ro: 'Parcul Petőfi Sándor & Crișul Center', hu: 'Petőfi Sándor Park & Crișul Center', en: 'Petőfi Sándor Park & Crișul Mall', de: 'Petőfi Park & Crișul Center', es: 'Parque Petőfi Sándor y Centro Crișul', fr: 'Parc Petőfi Sándor & Centre Crișul', it: 'Parco Petőfi Sándor & Centro Crișul', pt: 'Parque Petőfi Sándor & Centro Crișul' },
+    distance: '580 m',
+    travelMode: { ro: '🚶 9 min mers pe jos', hu: '🚶 9 perc séta', en: '🚶 9 min walk', de: '🚶 9 Min. zu Fuß', es: '🚶 9 min a pie', fr: '🚶 9 min à pied', it: '🚶 9 min a piedi', pt: '🚶 9 min a pé' },
+    desc: {
+      ro: 'Parc istoric amenajat și centru comercial cu supermarket, farmacie, magazine, cafenele și bănci.',
+      hu: 'Gondozott történelmi park és bevásárlóközpont szupermarkettel, gyógyszertárral, üzletekkel és bankokkal.',
+      en: 'Historic landscaped park adjacent to Crișul Shopping Mall with supermarket, pharmacy, retail shops & ATMs.',
+      de: 'Historischer Park direkt beim Einkaufszentrum Crișul mit Supermarkt, Apotheke, Geschäften und Banken.',
+      es: 'Parque histórico junto al centro comercial Crișul con supermercado, farmacia, tiendas y cajeros.',
+      fr: 'Parc historique à côté du centre commercial Crișul avec supermarché, pharmacie et boutiques.',
+      it: 'Parco storico adiacente al centro commerciale Crișul con supermercato, farmacia e negozi.',
+      pt: 'Parque histórico ao lado do centro comercial Crișul com supermercado, farmácia e lojas.'
+    },
+    mapUrl: 'https://maps.google.com/?q=Crisul+Shopping+Center+Oradea'
+  },
+  {
+    id: 'poi_nymphaea',
+    catGroup: ['near', 'center'],
+    catName: { ro: 'Aquapark Termal & Spa', hu: 'Termál Élményfürdő', en: 'Thermal Aquapark & Spa', de: 'Thermal-Aquapark & Spa', es: 'Aquapark Termal y Spa', fr: 'Aquapark Thermal & Spa', it: 'Aquapark Termale & Spa', pt: 'Aquapark Termal & Spa' },
+    name: { ro: 'Aquapark Nymphaea Oradea', hu: 'Nymphaea Élményfürdő', en: 'Nymphaea Aquapark Oradea', de: 'Aquapark Nymphaea', es: 'Aquapark Nymphaea', fr: 'Aquapark Nymphaea', it: 'Aquapark Nymphaea', pt: 'Aquapark Nymphaea' },
+    distance: '640 m',
+    travelMode: { ro: '🚶 9 min mers / 🚗 2 min', hu: '🚶 9 perc séta / 🚗 2 perc', en: '🚶 9 min walk / 🚗 2 min drive', de: '🚶 9 Min. / 🚗 2 Min.', es: '🚶 9 min a pie / 🚗 2 min', fr: '🚶 9 min / 🚗 2 min', it: '🚶 9 min / 🚗 2 min', pt: '🚶 9 min / 🚗 2 min' },
+    desc: {
+      ro: 'Cel mai mare și modern aquapark termal din regiune, cu 13 tobogane acvatice, bazine termale, saune finlandeze & spa.',
+      hu: 'A régió legnagyobb és legmodernebb termál élményfürdője 13 csúszdával, termálmedencékkel és szaunavilággal.',
+      en: 'The largest thermal aquapark in Transylvania featuring 13 waterslides, indoor/outdoor thermal pools, saunas & luxury spa.',
+      de: 'Der größte Thermal-Aquapark der Region mit 13 Wasserrutschen, Thermalbecken, Finnischen Saunen & Spa.',
+      es: 'El aquapark termal más grande de la región con 13 toboganes, piscinas termales, saunas y spa.',
+      fr: 'Le plus grand aquapark thermal de la région avec 13 toboggans, bassins thermaux, saunas et spa.',
+      it: 'Il più grande aquapark termale della regione con 13 scivoli, piscine termali, saune e spa.',
+      pt: 'O maior aquapark termal da região com 13 tobogãs, piscinas termais, saunas e spa.'
+    },
+    mapUrl: 'https://maps.google.com/?q=Aquapark+Nymphaea+Oradea'
+  },
+  {
+    id: 'poi_castle_oradea',
+    catGroup: ['near', 'center'],
+    catName: { ro: 'Cetate Istorică & Muzeu', hu: 'Történelmi Vár & Múzeum', en: 'Historic Fortress & Museum', de: 'Historische Festung & Museum', es: 'Fortaleza Histórica y Museo', fr: 'Forteresse Historique & Musée', it: 'Fortezza Storica & Museo', pt: 'Fortaleza Histórica & Museu' },
+    name: { ro: 'Cetatea Oradea (Castle of Oradea)', hu: 'Nagyváradi Vár (Cetatea Oradea)', en: 'Oradea Fortress (Castle of Oradea)', de: 'Festung Oradea (Burg)', es: 'Fortaleza de Oradea (Castillo)', fr: 'Forteresse d'Oradea (Château)', it: 'Fortezza di Oradea (Castello)', pt: 'Fortaleza de Oradea (Castelo)' },
+    distance: '780 m',
+    travelMode: { ro: '🚶 11 min mers pe jos', hu: '🚶 11 perc séta', en: '🚶 11 min walk', de: '🚶 11 Min. zu Fuß', es: '🚶 11 min a pie', fr: '🚶 11 min à pied', it: '🚶 11 min a piedi', pt: '🚶 11 min a pé' },
+    desc: {
+      ro: 'Cetate medievală în formă de stea cu 5 bastioane, găzduind Muzeul Orașului, ateliere mestesugărești și festivaluri.',
+      hu: 'Öt bástyás csillag alakú középkori vár, amely a Városi Múzeumnak, kézműves műhelyeknek és fesztiváloknak ad otthont.',
+      en: 'Monumental 11th-century pentagonal star fortress housing the Oradea City Museum, artisan shops, and summer festivals.',
+      de: 'Monumentale Fünfeck-Sternfestung aus dem 11. Jahrhundert mit Stadtmuseum, Handwerkerhöfen und Events.',
+      es: 'Monumental fortaleza pentagonal en estrella que alberga el Museo de la Ciudad y talleres artesanales.',
+      fr: 'Forteresse pentagonale en étoile du XIe siècle abritant le musée de la ville et des ateliers d'artisans.',
+      it: 'Monumentale fortezza pentagonale a stella ospitante il Museo della Città e botteghe artigiane.',
+      pt: 'Monumental fortaleza pentagonal em estrela que abriga o Museu da Cidade e oficinas artesanais.'
+    },
+    mapUrl: 'https://maps.google.com/?q=Cetatea+Oradea'
+  },
+  {
+    id: 'poi_piata_unirii',
+    catGroup: ['center'],
+    catName: { ro: 'Centrul Istoric', hu: 'Történelmi Belváros', en: 'Historic City Center', de: 'Historisches Zentrum', es: 'Centro Histórico', fr: 'Centre Historique', it: 'Centro Storico', pt: 'Centro Histórico' },
+    name: { ro: 'Piața Unirii & Palatul Vulturul Negru', hu: 'Szent László Tér & Fekete Sas Palota', en: 'Union Square & Black Eagle Palace', de: 'Piața Unirii & Palast Schwarzer Adler', es: 'Plaza de la Unión y Palacio Águila Negra', fr: 'Place de l'Union & Palais de l'Aigle Noir', it: 'Piazza Unirii & Palazzo Aquila Nera', pt: 'Praça da União & Palácio Águia Negra' },
+    distance: '1.6 km',
+    travelMode: { ro: '🚗 5 min auto / 🚋 Tram 1,3', hu: '🚗 5 perc autó / 🚋 Villamos', en: '🚗 5 min drive / 🚋 Tram line 1,3', de: '🚗 5 Min. / 🚋 Straßenbahn', es: '🚗 5 min coche / 🚋 Tranvía', fr: '🚗 5 min / 🚋 Tramway', it: '🚗 5 min / 🚋 Tram', pt: '🚗 5 min / 🚋 Elétrico' },
+    desc: {
+      ro: 'Inima arhitecturală Art Nouveau din Oradea, cu pasajul spectaculos de sticlă Vulturul Negru, Turnul Primăriei și Biserica cu Lună.',
+      hu: 'Nagyvárad Art Nouveau építészeti szíve a Fekete Sas üvegpasszázssal, a Városháza tornyával és a Holdas templommal.',
+      en: 'Oradea’s breathtaking Art Nouveau square featuring the glass-covered Black Eagle Passage, City Hall Tower & Moon Church.',
+      de: 'Oradeas atemberaubender Art-Nouveau-Platz mit der gläsernen Passage Schwarzer Adler und Rathausturm.',
+      es: 'El impresionante centro Art Nouveau de Oradea con el pasaje de cristal Águila Negra y la Torre del Ayuntamiento.',
+      fr: 'Le cœur Art nouveau d'Oradea avec le passage en verre de l'Aigle Noir et la tour de l'hôtel de ville.',
+      it: 'Il cuore Art Nouveau di Oradea con lo spettacolare passaggio in vetro dell'Aquila Nera e la Torre del Comune.',
+      pt: 'O coração Art Nouveau de Oradea com a passagem em vidro Águia Negra e a Torre da Câmara.'
+    },
+    mapUrl: 'https://maps.google.com/?q=Piata+Unirii+Oradea'
+  },
+  {
+    id: 'poi_baile_felix',
+    catGroup: ['center'],
+    catName: { ro: 'Stațiune Balneară', hu: 'Gyógyfürdő Helység', en: 'Thermal Spa Resort', de: 'Thermen-Kurort', es: 'Balneario Termal', fr: 'Station Thermale', it: 'Stazione Termale', pt: 'Estância Termal' },
+    name: { ro: 'Stațiunea Băile Felix', hu: 'Băile Felix (Felixfürdő)', en: 'Băile Felix Thermal Resort', de: 'Thermenresort Băile Felix', es: 'Balneario Băile Felix', fr: 'Station Thermale Băile Felix', it: 'Stazione Termale Băile Felix', pt: 'Estância Termal Băile Felix' },
+    distance: '8.2 km',
+    travelMode: { ro: '🚗 12 min auto / 🚌 Autobuz 511', hu: '🚗 12 perc autó / 🚌 Busz 511', en: '🚗 12 min drive / 🚌 Bus 511', de: '🚗 12 Min. / 🚌 Bus 511', es: '🚗 12 min coche / 🚌 Autobús 511', fr: '🚗 12 min / 🚌 Bus 511', it: '🚗 12 min / 🚌 Autobus 511', pt: '🚗 12 min / 🚌 Autocarro 511' },
+    desc: {
+      ro: 'Cea mai renumită stațiune termală din România, cu ape minerale curative, lacuri cu nuferi termali și bazine de relaxare.',
+      hu: 'Románia leghíresebb gyógyfürdőhelye gyógyhatású ásványvizekkel, tündérrózsás tavakkal és melegvizes medencékkel.',
+      en: 'Romania’s premier thermal resort renowned for curative mineral waters, thermal water lily lakes & wellness spas.',
+      de: 'Rumäniens berühmtester Thermenort mit heilendem Mineralwasser, Seerosenseen und Erholungsbädern.',
+      es: 'El balneario termal más famoso de Rumanía con aguas minerales curativas y lagos con nenúfares térmicos.',
+      fr: 'La station thermale la plus célèbre de Roumanie avec des eaux minérales curatives et des lacs de nénuphars.',
+      it: 'La più rinomata stazione termale della Romania con acque minerali curative e laghi con ninfee termali.',
+      pt: 'A estância termal mais famosa da Roménia com águas minerais curativas e lagos com nenúfares termais.'
+    },
+    mapUrl: 'https://maps.google.com/?q=Baile+Felix'
+  }
+];
+
 const LOCALIZED_ROOM_DATA = {
   room_01: {
     id: 'room_01',
@@ -849,8 +1156,56 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollReveal();
   initModalListeners();
   initWellnessSlideshow();
-  initThumbnailDragScroll();
+
+  initPoiSection();
 });
+
+function initPoiSection() {
+  const filterBtns = document.querySelectorAll('.poi-filter-btn');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.getAttribute('data-poi-filter');
+      renderPoiCards(filter);
+    });
+  });
+  renderPoiCards('all');
+}
+
+function renderPoiCards(filter = 'all') {
+  const grid = document.getElementById('poiGrid');
+  if (!grid) return;
+
+  grid.innerHTML = '';
+  const mapLinkText = TRANSLATIONS[currentLang]?.poi_map_link_text || 'Navighează pe Hărți';
+
+  LOCALIZED_POI_DATA.forEach(poi => {
+    if (filter !== 'all' && !poi.catGroup.includes(filter)) return;
+
+    const card = document.createElement('div');
+    card.className = 'poi-card reveal-up active';
+    card.innerHTML = `
+      <div>
+        <div class="poi-card-header">
+          <span class="poi-category-badge">${poi.catName[currentLang] || poi.catName.ro}</span>
+          <span class="poi-distance-badge">📍 ${poi.distance}</span>
+        </div>
+        <h3 class="poi-name">${poi.name[currentLang] || poi.name.ro}</h3>
+        <p class="poi-desc">${poi.desc[currentLang] || poi.desc.ro}</p>
+      </div>
+
+      <div class="poi-card-footer">
+        <span class="poi-travel-pill">${poi.travelMode[currentLang] || poi.travelMode.ro}</span>
+        <a href="${poi.mapUrl}" target="_blank" class="poi-map-link" rel="noopener">
+          ${mapLinkText} &nearr;
+        </a>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+}
+
 
 // ==========================================================================
 // LANGUAGE ENGINE CONTROLLER (ROMANIAN DEFAULT)
@@ -941,6 +1296,7 @@ function setLanguage(langCode) {
 
   // Render Localized Room Showcase Cards
   renderRoomCards();
+  renderPoiCards(document.querySelector('.poi-filter-btn.active')?.getAttribute('data-poi-filter') || 'all');
 
   // If Modal is currently open, update its localized strings instantly
   if (activeRoomId && document.getElementById('roomModalOverlay').classList.contains('active')) {
