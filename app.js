@@ -5,11 +5,11 @@
 // Comprehensive Wellness Spa Photo Exclude Set (All shared Jacuzzi, Sauna, Pool photos)
 const WELLNESS_EXCLUDE = new Set([
   'room_01_img_15.jpg', 'room_01_img_17.jpg', 'room_01_img_19.jpg', 'room_01_img_6.jpg',
-  'room_02_img_4.jpg', 'room_02_img_13.jpg', 'room_02_img_14.jpg', 'room_02_img_15.jpg', 'room_02_img_16.jpg',
-  'room_03_img_2.jpg', 'room_03_img_21.jpg',
+  'room_02_img_4.jpg', 'room_02_img_12.jpg', 'room_02_img_13.jpg', 'room_02_img_14.jpg', 'room_02_img_15.jpg', 'room_02_img_16.jpg',
+  'room_03_img_1.jpg', 'room_03_img_2.jpg', 'room_03_img_21.jpg',
   'room_04_img_1.jpg', 'room_04_img_14.jpg', 'room_04_img_16.jpg', 'room_04_img_17.jpg',
-  'room_05_img_2.jpg', 'room_05_img_16.jpg', 'room_05_img_21.jpg',
-  'room_06_img_2.jpg', 'room_06_img_14.jpg', 'room_06_img_17.jpg',
+  'room_05_img_2.jpg', 'room_05_img_15.jpg', 'room_05_img_16.jpg', 'room_05_img_19.jpg', 'room_05_img_21.jpg',
+  'room_06_img_2.jpg', 'room_06_img_13.jpg', 'room_06_img_14.jpg', 'room_06_img_17.jpg',
   'room_07_img_17.jpg', 'room_07_img_18.jpg', 'room_07_img_19.jpg'
 ]);
 
