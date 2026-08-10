@@ -1,27 +1,26 @@
 /* ==========================================================================
-   LITE RESIDENCE ORADEA - LITE BRIGHT SCANDINAVIAN ARCHITECTURAL DESIGN
-   Bright Porcelain & Warm Champagne Palette with Scroll-Reveal Motion
+   LITE RESIDENCE ORADEA - HIGH PERFORMANCE SCROLL & OPTIMIZED MOTION SYSTEM
+   Hardware-Accelerated 60FPS CSS Compositor Pipeline
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
 
 :root {
   /* LITE Bright Color Palette */
-  --bg-light: #FBFBFD;         /* Crisp Porcelain White */
-  --bg-surface: #FFFFFF;       /* Pure White Cards */
-  --bg-alt: #F3F4F8;           /* Light Warm Gray Alt Background */
+  --bg-light: #FBFBFD;
+  --bg-surface: #FFFFFF;
+  --bg-alt: #F3F4F8;
   
   --border-light: rgba(0, 0, 0, 0.07);
   --border-gold: rgba(197, 155, 39, 0.3);
   --border-hover: rgba(197, 155, 39, 0.6);
   
-  --primary: #C59B27;          /* Rich Architectural Gold */
+  --primary: #C59B27;
   --primary-hover: #A88219;
-  --primary-glow: rgba(197, 155, 39, 0.15);
   
-  --text-main: #111827;        /* Deep Charcoal for High Contrast Header */
-  --text-body: #374151;        /* High-Legibility Dark Slate Body Text */
-  --text-muted: #6B7280;       /* Muted Neutral Gray */
+  --text-main: #111827;
+  --text-body: #374151;
+  --text-muted: #6B7280;
   --text-dim: #9CA3AF;
   
   /* Typography */
@@ -36,14 +35,14 @@
   
   --transition-fast: 0.25s ease;
   --transition-normal: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  --transition-smooth: 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-reveal: 0.75s cubic-bezier(0.16, 1, 0.3, 1);
   
   --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.04);
-  --shadow-card: 0 16px 40px rgba(0, 0, 0, 0.06);
-  --shadow-card-hover: 0 24px 50px rgba(0, 0, 0, 0.12), 0 10px 30px rgba(197, 155, 39, 0.15);
+  --shadow-card: 0 12px 36px rgba(0, 0, 0, 0.05);
+  --shadow-card-hover: 0 20px 45px rgba(0, 0, 0, 0.09);
 }
 
-/* Base Reset & Styles */
+/* Base Reset & GPU Optimization */
 * {
   margin: 0;
   padding: 0;
@@ -57,6 +56,7 @@ html {
   color: var(--text-body);
   line-height: 1.7;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4 {
@@ -83,33 +83,33 @@ button {
   padding: 0 24px;
 }
 
-/* Scroll-Reveal Entrance Animations */
+/* Hardware Accelerated Scroll-Reveal Entrance Animations */
 .reveal-up {
   opacity: 0;
-  transform: translateY(45px);
-  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: opacity, transform;
+  transform: translate3d(0, 35px, 0);
+  transition: opacity var(--transition-reveal), transform var(--transition-reveal);
+  backface-visibility: hidden;
 }
 
 .reveal-left {
   opacity: 0;
-  transform: translateX(-65px);
-  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: opacity, transform;
+  transform: translate3d(-45px, 0, 0);
+  transition: opacity var(--transition-reveal), transform var(--transition-reveal);
+  backface-visibility: hidden;
 }
 
 .reveal-right {
   opacity: 0;
-  transform: translateX(65px);
-  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: opacity, transform;
+  transform: translate3d(45px, 0, 0);
+  transition: opacity var(--transition-reveal), transform var(--transition-reveal);
+  backface-visibility: hidden;
 }
 
 .reveal-up.active,
 .reveal-left.active,
 .reveal-right.active {
   opacity: 1;
-  transform: translate(0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 /* Badges */
@@ -131,11 +131,6 @@ button {
   border: 1px solid var(--border-gold);
 }
 
-.badge-dark {
-  background: var(--text-main);
-  color: #FFF;
-}
-
 /* Navigation Bar */
 .navbar {
   position: fixed;
@@ -144,15 +139,15 @@ button {
   width: 100%;
   z-index: 1000;
   padding: 22px 0;
-  transition: var(--transition-normal);
-  background: rgba(251, 251, 253, 0.85);
+  transition: background-color var(--transition-fast), padding var(--transition-fast);
+  background: rgba(251, 251, 253, 0.88);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border-light);
 }
 
 .navbar.scrolled {
-  background: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
   padding: 14px 0;
 }
 
@@ -200,7 +195,7 @@ button {
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--text-muted);
-  transition: var(--transition-fast);
+  transition: color var(--transition-fast);
   position: relative;
 }
 
@@ -212,7 +207,7 @@ button {
   width: 0%;
   height: 2px;
   background-color: var(--primary);
-  transition: var(--transition-fast);
+  transition: width var(--transition-fast);
 }
 
 .nav-link:hover, .nav-link.active {
@@ -233,11 +228,11 @@ button {
   align-items: center;
   gap: 10px;
   box-shadow: 0 8px 24px rgba(197, 155, 39, 0.25);
-  transition: var(--transition-normal);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .btn-gold:hover {
-  transform: translateY(-2px);
+  transform: translate3d(0, -2px, 0);
   box-shadow: 0 12px 30px rgba(197, 155, 39, 0.35);
 }
 
@@ -266,7 +261,7 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.92) contrast(1.05);
+  filter: brightness(0.94) contrast(1.04);
 }
 
 .hero-bg-overlay {
@@ -275,7 +270,7 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, var(--bg-light) 10%, rgba(251, 251, 253, 0.4) 60%, transparent 100%);
+  background: linear-gradient(to right, var(--bg-light) 12%, rgba(251, 251, 253, 0.4) 60%, transparent 100%);
 }
 
 .hero-content {
@@ -336,7 +331,7 @@ button {
 
 /* Sections Base */
 .section {
-  padding: 110px 0;
+  padding: 100px 0;
 }
 
 .section-alt {
@@ -348,7 +343,7 @@ button {
 .section-header {
   text-align: center;
   max-width: 760px;
-  margin: 0 auto 64px auto;
+  margin: 0 auto 60px auto;
 }
 
 .section-subtitle {
@@ -385,19 +380,15 @@ button {
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-card);
-  height: 480px;
+  height: 460px;
   border: 1px solid var(--border-light);
+  background-color: #EEE;
 }
 
 .wellness-image-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.8s ease;
-}
-
-.wellness-image-box:hover img {
-  transform: scale(1.05);
 }
 
 .wellness-content h3 {
@@ -438,11 +429,11 @@ button {
   flex-shrink: 0;
 }
 
-/* Room Showcase (1-Page Scroll Cards) */
+/* Room Showcase Cards (Optimized Compositor Layer) */
 .room-showcase-list {
   display: flex;
   flex-direction: column;
-  gap: 70px;
+  gap: 60px;
 }
 
 .room-card-large {
@@ -453,11 +444,11 @@ button {
   display: grid;
   grid-template-columns: 1.15fr 1fr;
   box-shadow: var(--shadow-card);
-  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
 }
 
 .room-card-large:hover {
-  transform: translateY(-6px);
+  transform: translate3d(0, -4px, 0);
   border-color: var(--border-gold);
   box-shadow: var(--shadow-card-hover);
 }
@@ -473,20 +464,15 @@ button {
 .room-image-box {
   position: relative;
   height: 100%;
-  min-height: 440px;
+  min-height: 400px;
   overflow: hidden;
-  background-color: #EEE;
+  background-color: #F0F2F5;
 }
 
 .room-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.8s ease;
-}
-
-.room-card-large:hover .room-image {
-  transform: scale(1.06);
 }
 
 .room-badge {
@@ -494,14 +480,14 @@ button {
   top: 20px;
   left: 20px;
   z-index: 2;
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(8px);
   color: var(--text-main);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 }
 
 .room-details {
-  padding: 44px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -518,22 +504,22 @@ button {
 }
 
 .room-title {
-  font-size: 2.2rem;
-  margin-bottom: 16px;
+  font-size: 2.1rem;
+  margin-bottom: 14px;
   color: var(--text-main);
 }
 
 .room-desc {
   color: var(--text-body);
   font-size: 1rem;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 .room-specs-bar {
   display: flex;
   gap: 20px;
-  padding-bottom: 24px;
-  margin-bottom: 28px;
+  padding-bottom: 20px;
+  margin-bottom: 24px;
   border-bottom: 1px solid var(--border-light);
   flex-wrap: wrap;
 }
@@ -555,20 +541,20 @@ button {
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
   color: #FFF;
   font-weight: 700;
-  padding: 14px 32px;
+  padding: 13px 30px;
   border-radius: var(--radius-full);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   box-shadow: 0 8px 24px rgba(197, 155, 39, 0.25);
-  transition: var(--transition-normal);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
   width: fit-content;
 }
 
 .btn-redirect:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 14px 32px rgba(197, 155, 39, 0.35);
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 12px 30px rgba(197, 155, 39, 0.35);
 }
 
 /* Location & Policy Section */
