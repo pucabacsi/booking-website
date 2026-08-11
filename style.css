@@ -79,9 +79,9 @@ button {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1480px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 32px;
 }
 
 /* Hardware Accelerated Scroll-Reveal Entrance Animations */
@@ -153,9 +153,14 @@ button {
 }
 
 .nav-container {
+  max-width: 1560px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 36px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
 .brand-logo {
@@ -163,6 +168,7 @@ button {
   flex-direction: column;
   line-height: 1;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .brand-name {
@@ -189,12 +195,14 @@ button {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 24px;
   list-style: none;
+  margin: 0 12px;
+  flex-shrink: 0;
 }
 
 .nav-link {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 600;
   color: var(--text-muted);
   transition: color var(--transition-fast);
@@ -224,6 +232,7 @@ button {
 /* Cute Glassmorphic Flag Selector Widget */
 .lang-selector-wrapper {
   position: relative;
+  flex-shrink: 0;
 }
 
 .lang-selector {
