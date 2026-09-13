@@ -392,18 +392,20 @@ button {
 /* Mobile Menu Toggle Button (hidden on desktop) */
 .mobile-nav-toggle {
   display: none;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.92);
   border: 1px solid var(--border-light);
-  border-radius: var(--radius-full);
+  border-radius: 50%;
   width: 42px;
   height: 42px;
+  padding: 0;
+  margin: 0;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   z-index: 1100;
   transition: all var(--transition-fast);
-  padding: 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  line-height: 0;
 }
 
 .mobile-nav-toggle:hover, .mobile-nav-toggle:focus-visible {
@@ -413,56 +415,36 @@ button {
   box-shadow: 0 4px 12px rgba(197, 155, 39, 0.15);
 }
 
-.hamburger-box {
-  width: 20px;
-  height: 14px;
-  display: inline-block;
-  position: relative;
+.hamburger-svg {
+  width: 22px;
+  height: 22px;
+  display: block;
+  stroke: var(--text-main);
+  transition: stroke 0.25s ease;
+  overflow: visible;
 }
 
-.hamburger-inner,
-.hamburger-inner::before,
-.hamburger-inner::after {
-  width: 20px;
-  height: 2px;
-  background-color: var(--text-main);
-  border-radius: 2px;
-  position: absolute;
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease, top 0.3s ease, bottom 0.3s ease;
+.hamburger-svg line {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease, stroke 0.25s ease;
+  transform-origin: 12px 12px;
 }
 
-.hamburger-inner {
-  top: 50%;
-  transform: translateY(-50%);
+/* Open State - Perfect Symmetrical Gold 'X' */
+.mobile-nav-toggle.open .hamburger-svg {
+  stroke: var(--primary);
 }
 
-.hamburger-inner::before {
-  content: '';
-  top: -6px;
-  left: 0;
+.mobile-nav-toggle.open .line-top {
+  transform: translateY(6px) rotate(45deg);
 }
 
-.hamburger-inner::after {
-  content: '';
-  bottom: -6px;
-  left: 0;
+.mobile-nav-toggle.open .line-mid {
+  opacity: 0;
+  transform: scaleX(0);
 }
 
-/* Hamburger active transformation to gold 'X' */
-.mobile-nav-toggle.open .hamburger-inner {
-  background-color: transparent;
-}
-
-.mobile-nav-toggle.open .hamburger-inner::before {
-  top: 0;
-  transform: rotate(45deg);
-  background-color: var(--primary);
-}
-
-.mobile-nav-toggle.open .hamburger-inner::after {
-  bottom: 0;
-  transform: rotate(-45deg);
-  background-color: var(--primary);
+.mobile-nav-toggle.open .line-bot {
+  transform: translateY(-6px) rotate(-45deg);
 }
 
 /* Mobile Nav Backdrop Overlay */
