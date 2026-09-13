@@ -1194,7 +1194,18 @@ function initMobileNavigation() {
     }
   });
 
-  backdrop.addEventListener('click', closeMenu);
+  backdrop.addEventListener('click', (e) => {
+    e.stopPropagation();
+    closeMenu();
+  });
+
+  document.addEventListener('click', (e) => {
+    if (navLinks.classList.contains('open') && 
+        !navLinks.contains(e.target) && 
+        !toggleBtn.contains(e.target)) {
+      closeMenu();
+    }
+  });
 
   const links = navLinks.querySelectorAll('a');
   links.forEach(link => {
