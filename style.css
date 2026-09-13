@@ -392,20 +392,20 @@ button {
 /* Mobile Menu Toggle Button (hidden on desktop) */
 .mobile-nav-toggle {
   display: none;
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.94);
   border: 1px solid var(--border-light);
   border-radius: 50%;
   width: 42px;
   height: 42px;
   padding: 0;
   margin: 0;
+  position: relative;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   z-index: 1100;
   transition: all var(--transition-fast);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-  line-height: 0;
 }
 
 .mobile-nav-toggle:hover, .mobile-nav-toggle:focus-visible {
@@ -415,36 +415,39 @@ button {
   box-shadow: 0 4px 12px rgba(197, 155, 39, 0.15);
 }
 
-.hamburger-svg {
+.toggle-icon {
   width: 22px;
   height: 22px;
-  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -11px;
+  margin-left: -11px;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.icon-hamburger {
   stroke: var(--text-main);
-  transition: stroke 0.25s ease;
-  overflow: visible;
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
 }
 
-.hamburger-svg line {
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease, stroke 0.25s ease;
-  transform-origin: 12px 12px;
-}
-
-/* Open State - Perfect Symmetrical Gold 'X' */
-.mobile-nav-toggle.open .hamburger-svg {
+.icon-close {
   stroke: var(--primary);
-}
-
-.mobile-nav-toggle.open .line-top {
-  transform: translateY(6px) rotate(45deg);
-}
-
-.mobile-nav-toggle.open .line-mid {
   opacity: 0;
-  transform: scaleX(0);
+  transform: rotate(-90deg) scale(0.7);
 }
 
-.mobile-nav-toggle.open .line-bot {
-  transform: translateY(-6px) rotate(-45deg);
+/* Open State - Smooth Spin to Real Symmetrical 'X' */
+.mobile-nav-toggle.open .icon-hamburger {
+  opacity: 0;
+  transform: rotate(90deg) scale(0.7);
+}
+
+.mobile-nav-toggle.open .icon-close {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
 }
 
 /* Mobile Nav Backdrop Overlay */
