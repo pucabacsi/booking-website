@@ -7,7 +7,7 @@
   <meta name="description" content="Lite Residence Oradea — 7 apartamente de lux în regim hotelier la Dealul Ciuperca, Strada Olteniei 64. Ciubăr Jacuzzi & Saună, parcare privată pentru fiecare cameră, terase private, check-in digital de la ora 16:00.">
   
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=mobile2">
 </head>
 <body>
 
@@ -19,39 +19,55 @@
         <span class="brand-location">ORADEA • DEALUL CIUPERCA</span>
       </a>
 
-      <ul class="nav-links">
+      <ul class="nav-links" id="navLinks">
         <li><a href="#hero" class="nav-link active" data-i18n="nav_overview">Prezentare Generală</a></li>
         <li><a href="#wellness" class="nav-link" data-i18n="nav_wellness">Wellness & Facilități</a></li>
         <li><a href="#apartments" class="nav-link" data-i18n="nav_apartments">Apartamente (01–07)</a></li>
         <li><a href="#location" class="nav-link" data-i18n="nav_location">Locație & Hartă</a></li>
         <li><a href="#poi" class="nav-link" data-i18n="nav_poi">Atracții & POI</a></li>
+        <li class="nav-drawer-cta">
+          <a href="#apartments" class="btn-gold nav-drawer-btn" data-i18n="nav_explore_btn">Explorează Apartamentele &rarr;</a>
+        </li>
       </ul>
 
-      <!-- Cute Flag Language Selector Widget -->
-      <div class="lang-selector-wrapper">
-        <div class="lang-selector" id="langSelector">
-          <button class="lang-btn" id="langBtn" aria-label="Select Language">
-            <img src="https://flagcdn.com/w40/ro.png" alt="RO" class="lang-flag-img" id="currentLangFlagImg">
-            <span class="lang-code" id="currentLangCode">RO</span>
-            <svg class="lang-arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
-          </button>
-          
-          <div class="lang-dropdown" id="langDropdown">
-            <button class="lang-option active" data-lang="ro"><img src="https://flagcdn.com/w40/ro.png" alt="RO" class="flag-icon"> Română</button>
-            <button class="lang-option" data-lang="hu"><img src="https://flagcdn.com/w40/hu.png" alt="HU" class="flag-icon"> Magyar</button>
-            <button class="lang-option" data-lang="en"><img src="https://flagcdn.com/w40/gb.png" alt="EN" class="flag-icon"> English</button>
-            <button class="lang-option" data-lang="de"><img src="https://flagcdn.com/w40/de.png" alt="DE" class="flag-icon"> Deutsch</button>
-            <button class="lang-option" data-lang="es"><img src="https://flagcdn.com/w40/es.png" alt="ES" class="flag-icon"> Español</button>
-            <button class="lang-option" data-lang="fr"><img src="https://flagcdn.com/w40/fr.png" alt="FR" class="flag-icon"> Français</button>
-            <button class="lang-option" data-lang="it"><img src="https://flagcdn.com/w40/it.png" alt="IT" class="flag-icon"> Italiano</button>
-            <button class="lang-option" data-lang="pt"><img src="https://flagcdn.com/w40/pt.png" alt="PT" class="flag-icon"> Português</button>
+      <!-- Nav Actions (Lang selector + CTA + Mobile Hamburger) -->
+      <div class="nav-actions">
+        <!-- Cute Flag Language Selector Widget -->
+        <div class="lang-selector-wrapper">
+          <div class="lang-selector" id="langSelector">
+            <button class="lang-btn" id="langBtn" aria-label="Select Language">
+              <img src="https://flagcdn.com/w40/ro.png" alt="RO" class="lang-flag-img" id="currentLangFlagImg">
+              <span class="lang-code" id="currentLangCode">RO</span>
+              <svg class="lang-arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            
+            <div class="lang-dropdown" id="langDropdown">
+              <button class="lang-option active" data-lang="ro"><img src="https://flagcdn.com/w40/ro.png" alt="RO" class="flag-icon"> Română</button>
+              <button class="lang-option" data-lang="hu"><img src="https://flagcdn.com/w40/hu.png" alt="HU" class="flag-icon"> Magyar</button>
+              <button class="lang-option" data-lang="en"><img src="https://flagcdn.com/w40/gb.png" alt="EN" class="flag-icon"> English</button>
+              <button class="lang-option" data-lang="de"><img src="https://flagcdn.com/w40/de.png" alt="DE" class="flag-icon"> Deutsch</button>
+              <button class="lang-option" data-lang="es"><img src="https://flagcdn.com/w40/es.png" alt="ES" class="flag-icon"> Español</button>
+              <button class="lang-option" data-lang="fr"><img src="https://flagcdn.com/w40/fr.png" alt="FR" class="flag-icon"> Français</button>
+              <button class="lang-option" data-lang="it"><img src="https://flagcdn.com/w40/it.png" alt="IT" class="flag-icon"> Italiano</button>
+              <button class="lang-option" data-lang="pt"><img src="https://flagcdn.com/w40/pt.png" alt="PT" class="flag-icon"> Português</button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <a href="#apartments" class="btn-gold" data-i18n="nav_explore_btn">Explorează Apartamentele &rarr;</a>
+        <a href="#apartments" class="btn-gold nav-cta-desktop" data-i18n="nav_explore_btn">Explorează Apartamentele &rarr;</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Comută meniul de navigare" aria-expanded="false">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
     </div>
   </nav>
+
+  <!-- Mobile Nav Backdrop Overlay -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
 
   <!-- Hero Overview Section -->
   <section class="hero" id="hero">
@@ -540,6 +556,6 @@
   </div>
 
   <!-- JavaScript -->
-  <script src="app.js"></script>
+  <script src="app.js?v=mobile2"></script>
 </body>
 </html>
